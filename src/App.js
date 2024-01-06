@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Footer from './Footer';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
