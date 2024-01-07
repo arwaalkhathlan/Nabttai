@@ -1,9 +1,9 @@
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import Header from "../../components/Header";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Footer from '../../components/Footer';
 import UserReviewPage from "../../components/UserReviewPage";
-import ProductCard from "../../components/Product";
+import ProductCard from "../../components/Product_card";
 
 function ProductsPage() {
     return(
