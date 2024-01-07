@@ -1,11 +1,12 @@
 // ProductCard.js
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import naseem from '../images/naseem.jpeg';
-
 import '../css/products.css';
-
 const ProductCard = ({ imageUrl, name, price, description, onPurchase }) => {
+  const params = useParams();
+  console.log(params.ProductId);
   return (
     <Card style={{ border: 'none', padding: '100px 100px 0 0' }}>
       <Row noGutters>
@@ -19,9 +20,9 @@ const ProductCard = ({ imageUrl, name, price, description, onPurchase }) => {
           <Card.Body className='product_body-text'>
 
             <div className='Product_label'>
-            
-            <Card.Title style={{ fontSize: '1.5rem', fontWeight: 'bold', marginLeft:'500px' }}>نسيم</Card.Title>
-            <Card.Text style={{ fontSize: '1rem' }}>السعر: 30.0</Card.Text>
+
+              <Card.Title style={{ fontSize: '1.5rem', fontWeight: 'bold', marginLeft: '500px' }}>نسيم</Card.Title>
+              <Card.Text style={{ fontSize: '1rem' }}>السعر: 30.0</Card.Text>
 
             </div>
 
@@ -30,7 +31,7 @@ const ProductCard = ({ imageUrl, name, price, description, onPurchase }) => {
             <Button
               variant="primary"
               onClick={onPurchase}
-              style={{ marginTop: '10px' , width:'80%'}}
+              style={{ marginTop: '10px', width: '80%' }}
             >
               Purchase
             </Button>

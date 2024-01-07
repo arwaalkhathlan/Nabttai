@@ -1,4 +1,5 @@
 import { Col, Row, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import sabara from '../images/sabra.png';
 import Fee from '../images/fe.jpeg';
 import Nassem from '../images/naseem.jpeg';
@@ -16,7 +17,7 @@ function Prodcuts() {
                                 وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج
                             </Card.Text>
                             <div className="card-bottom d-flex">
-                                <Button className="btn-card flex-fill" variant="primary">اضف إلى السلة</Button>
+                                <Link to={`/ProdcutPage/1`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
                                 <img className="like-icon" src={like} alt="likeIcon" />
                             </div>
                         </Card.Body>
@@ -31,7 +32,7 @@ function Prodcuts() {
                                 وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج
                             </Card.Text>
                             <div className="card-bottom d-flex">
-                                <Button className="btn-card flex-fill" variant="primary">اضف إلى السلة</Button>
+                                <Link to={`/ProdcutPage/2`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
                                 <img className="like-icon" src={like} alt="likeIcon" />
                             </div>
                         </Card.Body>
@@ -46,7 +47,7 @@ function Prodcuts() {
                                 وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج
                             </Card.Text>
                             <div className="card-bottom d-flex">
-                                <Button className="btn-card flex-fill" variant="primary">اضف إلى السلة</Button>
+                                <Link to={`/ProdcutPage/3`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
                                 <img className="like-icon" src={like} alt="likeIcon" />
                             </div>
                         </Card.Body>
