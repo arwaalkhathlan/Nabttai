@@ -20,9 +20,9 @@ const ProductCard = ({ imageUrl, name, price, description, onPurchase }) => {
           <Card.Body className='product_body-text'>
 
             <div className='Product_label'>
-            
-            <Card.Title style={{ fontSize: '1.5rem', fontWeight: 'bold', marginLeft:'500px' }}>نسيم</Card.Title>
-            <Card.Text style={{ fontSize: '1rem' }}>السعر: 30.0</Card.Text>
+
+              <Card.Title style={{ fontSize: '1.5rem', fontWeight: 'bold', marginLeft: '500px' }}>نسيم</Card.Title>
+              <Card.Text style={{ fontSize: '1rem' }}>السعر: 30.0</Card.Text>
 
             </div>
 
@@ -31,7 +31,7 @@ const ProductCard = ({ imageUrl, name, price, description, onPurchase }) => {
             <Button
               variant="primary"
               onClick={onPurchase}
-              style={{ marginTop: '10px' , width:'80%'}}
+              style={{ marginTop: '10px', width: '80%' }}
             >
               Purchase
             </Button>
