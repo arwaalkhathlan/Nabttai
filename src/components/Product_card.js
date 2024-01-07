@@ -6,7 +6,6 @@ import naseem from '../images/naseem.jpeg';
 import '../css/products.css';
 const ProductCard = ({ imageUrl, name, price, description, onPurchase }) => {
   const params = useParams();
-  console.log(params.ProductId);
   return (
     <Card style={{ border: 'none', padding: '100px 100px 0 0' }}>
       <Row noGutters>
