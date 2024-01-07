@@ -5,6 +5,8 @@ import logo from '../images/greenLogo.svg';
 import { Link } from "react-router-dom";
 import FamousPlant from '../components/FamousPlant';
 import Prodcuts from '../components/Products';
+import '../css/readyclasses.css';
+import '../css/index.css';
 
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
