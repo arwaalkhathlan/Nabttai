@@ -11,7 +11,7 @@ const ProductCard = ({ imageUrl, name, description, onPurchase }) => {
   console.log(params.ProductId);
 
   return (
-    <Container>
+    <Container style={{marginTop:'100px'}}>
       <Card style={{ border: 'none', padding: '20px' }}>
         <Row>
           {/* Image Column */}
