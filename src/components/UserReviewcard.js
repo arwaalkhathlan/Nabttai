@@ -1,6 +1,10 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 
+
+
+
+
 const UserReviewCard = ({ userProfilePicture, reviewText, userName, starRating }) => {
   return (
 
