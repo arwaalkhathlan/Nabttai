@@ -5,6 +5,9 @@ import logo from '../images/greenLogo.svg';
 import { Link } from "react-router-dom";
 import FamousPlant from '../components/FamousPlant';
 import Prodcuts from '../components/Products';
+
+import Footer from '../components/Footer';
+import UserReviewPage from "../components/UserReviewPage";
 function Home() {
     return (
         <>
@@ -44,6 +47,17 @@ function Home() {
             <Container>
                 <Prodcuts />
             </Container>
+
+           <Container className="review-container">
+           <label className="review_title" >المراجعات</label>
+           <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
+           <UserReviewPage />
+           </Container>
+
+            <Footer />
+
+
+            
         </>
     );
 }

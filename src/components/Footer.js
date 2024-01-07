@@ -79,7 +79,7 @@ const Footer = () => {
 
   return (
     <footer style={footerStyle}>
-      <Container fluid>
+      <Container >
         <Row className="d-flex align-items-center">
           <Col md={2}>
             <img src={icon_green} alt="Logo" style={iconStyle} />
