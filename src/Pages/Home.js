@@ -3,16 +3,8 @@ import Header from "../components/Header";
 import searchIcon from '../images/search 1.svg';
 import logo from '../images/greenLogo.svg';
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import FamousPlant from "../components/FamousPlant";
-import Prodcuts from "../components/Products";
-import Footer from "../components/Footer";
-import UserReviewPage from "../components/UserReviewPage";
-
-=======
 import FamousPlant from '../components/FamousPlant';
 import Prodcuts from '../components/Products';
->>>>>>> 5565b5c1c8ff8bc32c91d45dbc5931bc2afb0f32
 function Home() {
     return (
         <>
