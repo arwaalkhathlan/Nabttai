@@ -1,5 +1,5 @@
 
-  /* products.css */
+  
   .Button {
     margin-top: 10px;
   }
@@ -9,15 +9,58 @@
     font-weight: bold;
     display: flex;
     margin-left: auto;
-    margin-right: 20px; 
+    
   }
 
-  
+  .Product_Button {
+    display: flex;
+    max-width: 700px;
+    
+  }
+
+  /* products.css */
 
 .product_body-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
 }
 
+.Product_care {
+  margin-top: 20px;
+}
+
+.care-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.care-image {
+  width: 80px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+.care-content {
+  width: 100%;
+}
+
+
+/* reviews style */
+.review_title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.review_sub-title{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.review-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

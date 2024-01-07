@@ -1,5 +1,3 @@
-// Footer.js
-
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import icon_green from '../images/icon_green.png';
@@ -26,18 +24,18 @@ const Footer = () => {
     backgroundColor: '#F2F1EB',
     borderRadius: '30px 30px 0 0',
     boxShadow: '0px -4px 8px rgba(0, 0, 0, 0.1)',
-    padding: '20px 0',
+    padding: '20px 15px', 
   };
 
   const linkStyle = {
     color: '#3F5B4D',
     textDecoration: 'none',
-    marginRight: '-30px',
+    marginRight: '5px',
   };
 
   const linkStyleemail = {
     color: '#3F5B4D',
-    marginRight: '-30px',
+    marginRight: '-13px',
     listStyle: 'none',
   };
 
@@ -79,7 +77,7 @@ const Footer = () => {
 
   return (
     <footer style={footerStyle}>
-      <Container >
+      <Container>
         <Row className="d-flex align-items-center">
           <Col md={2}>
             <img src={icon_green} alt="Logo" style={iconStyle} />
