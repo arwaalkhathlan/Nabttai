@@ -3,9 +3,8 @@ import Header from "../components/Header";
 import searchIcon from '../images/search 1.svg';
 import logo from '../images/greenLogo.svg';
 import { Link } from "react-router-dom";
-import FamousPlant from "../components/Products";
-import Prodcuts from "../components/FamousPlant";
-
+import FamousPlant from '../components/FamousPlant';
+import Prodcuts from '../components/Products';
 function Home() {
     return (
         <>
@@ -33,10 +32,10 @@ function Home() {
             </div>
             <div className="famous-plants">
                 <div className="caption text-center py-4">
-                <h2>أشهر النباتات الاقتصادية في السعودية</h2>
-                <p>وصف قصير وصف قصير وصف قصير</p>
+                    <h2>أشهر النباتات الاقتصادية في السعودية</h2>
+                    <p>وصف قصير وصف قصير وصف قصير</p>
                 </div>
-            <FamousPlant />
+                <FamousPlant />
             </div>
             <div className="caption text-center py-4">
                 <h2>منجاتنا</h2>
