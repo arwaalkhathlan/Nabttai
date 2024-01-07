@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  :root {
+    --green-color-dark: #3F5B4D;
+    --green-color-light: #88AB8E;
+    --light-brown: #EEE7DA;
+    --sec-light-brown: #F2F1EB;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+a{
+  text-decoration: none;
+  color: #000;
 }
+ul,li{
+  list-style-type: none;
+}
+  /* Start Header Style-----------*/
+  nav {
+    padding-bottom: 35px;
+  }
+
+  nav .icon-brand {
+    width: clamp(120px, 140px, 4vw);
+  }
+
+  nav .nav-link {
+    font-size: clamp(16px, 24px, 4vw);
+    color: #fff;
+    font-weight: 800;
+    font-family: inherit;
+  }
+
+  nav .sign-link {
+    font-size: clamp(12px, 20px, 4vw);
+    border: 2px solid var(--bs-body-bg);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  nav .sign-link:hover {
+    background-color: var(--bs-body-bg);
+    color: var(--green-color-light);
+  }
+
+  /* End Header Style-------------*/
+  /* Start Main Hero Style-------------*/
+  .main-hero {
+    background-color: var(--green-color-light);
+    
+  }
+  .main-hero .right-leaf,
+  .main-hero .left-leaf{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* z-index: 1; */
+  }
+  .main-hero .right-leaf{
+    width: 300px;
+    height: 826px;
+    background-image: url(../images/rightleaf.png);
+    top: 60px;
+    right: 0;
+  }
+  .main-hero .left-leaf{
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/leav.png);
+    bottom: -86px;
+    left: 0;
+  }
+  .search-div {
+    background-color: var(--sec-light-brown);
+    text-align: center;
+    border-radius: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 59px 12px 19px;
+    width: min(600px, 100%);
+    box-shadow: -5px -5px 10px 0px #FFF inset,
+      5px 5px 10px 0px rgba(170, 170, 204, 0.50) inset,
+      2px 2px 4px 0px rgba(170, 170, 204, 0.25) inset,
+      -2px -2px 4px 0px rgba(255, 255, 255, 0.50) inset;
+      /* z-index: 5; */
+  }
+
+  .search-div input[type="search"] {
+    flex-grow: 1;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  .search-div input[type="search"]::placeholder{
+    font-weight: 500px;
+    font-size: 20px;
+  }
+
+  .search-div .search-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: var(--sec-light-brown);
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: -5px -5px 10px 0px #FFF,
+      5px 5px 10px 0px rgba(170, 170, 204, 0.50);
+  }
+  .text-hero  .title {
+    display: inline-flex;
+    align-items: flex-end;
+    text-align: center;
+  }
+  .text-hero  .title h1{
+    font-weight: 700;
+    font-size: clamp(25px, 50px, 4vw);
+    color: #fff;
+    margin-bottom: 18px;
+  }
+  .text-hero  .title img {
+    width: 157px;
+    height: 149px;
+  }
+  .text-hero p{
+    font-size: clamp(20px, 50px, 4vw);
+    font-weight: 600;
+    color: #fff;
+    
+  }
+  .text-hero p > span{
+    color: var(--green-color-dark);
+  }
+  .link-hero{
+    text-decoration: none;
+    font-size: clamp(20px, 25px, 4vw);
+    color: #3F5B4D;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+  }
+  /* End Main Hero Style-------------*/

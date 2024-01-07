@@ -1,0 +1,10 @@
+.green-dark-bg{
+    background-color: var(--green-color-dark);
+}
+.green-light-bg{
+    background-color: var(--green-color-light);
+}
+.border-bottom-rad{
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}

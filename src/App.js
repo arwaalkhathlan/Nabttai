@@ -1,14 +1,10 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
-import Footer from './components/Footer.js';
-import UserReviewPage from './components/UserReviewPage.js';
-
+import './css/readyclasses.css'
+import './css/index.css';
+import Home from './Pages/Home';
 function App() {
   return (
     <div className="App">
-
-      <UserReviewPage />
-      <Footer />
+      <Home />
     </div>
   );
 }
