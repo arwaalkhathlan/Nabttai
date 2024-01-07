@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import { Routes, Route } from 'react-router-dom';
 import OurProducts from './Pages/OurProducts';
 import AboutUs from './Pages/AboutUs';
+import ProductsPage from './Pages/ProductsPage';
 function App() {
   return (
     <div className="App">

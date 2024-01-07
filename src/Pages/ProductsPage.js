@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import Header from "../../components/Header";
-import Footer from '../../components/Footer';
-import UserReviewPage from "../../components/UserReviewPage";
-import ProductCard from "../../components/Product_card";
+import Header from "../components/Header";
+import Footer from '../components/Footer';
+import UserReviewPage from "../components/UserReviewPage";
+import ProductCard from "../components/Product_card";
 
 function ProductsPage() {
     return(
@@ -16,7 +16,6 @@ function ProductsPage() {
            <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
            <UserReviewPage />
          </div>
-
             <Footer/>
         </>
     )
