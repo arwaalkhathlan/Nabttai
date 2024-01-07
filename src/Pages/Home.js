@@ -33,7 +33,15 @@ return(
         </Container>
     </div>
 
-    <UserReviewPage />
+
+    <div className="review-container">
+        <label className="review_title" >العملاء</label>
+        <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
+        <UserReviewPage />
+    </div>
+    
+        
+    
 
     <Footer />
     </>
