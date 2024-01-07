@@ -8,7 +8,7 @@ const UserReviewPage = () => {
     <Container fluid>
       <Row className="justify-content-around">
         {userReviewData.map((review) => (
-          <Col key={review.id} xs={12} sm={6} md={4} lg={3}>
+          <Col key={review.id} xs={12} sm={12} md={6} lg={4}>
             <UserReviewCard
               userProfilePicture={review.userProfilePicture}
               reviewText={review.reviewText}

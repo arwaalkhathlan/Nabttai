@@ -5,6 +5,7 @@
     --green-color-light: #88AB8E;
     --light-brown: #EEE7DA;
     --sec-light-brown: #F2F1EB;
+    --thre-color: #EBEFF8;
   }
 
   * {
@@ -167,6 +168,33 @@
 
   /* End Main Hero Style-------------*/
   /*Start Famous Plants Style*/
+  .famous-plants .palm{
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    top: 30px;
+    z-index: -1;
+  }
+  .famous-plants .palm img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .famous-plants .left-palm{
+    left: 5px;
+  }
+  .famous-plants .right-palm{
+    right: 5px;
+  }
+  @media (max-width: 768px) {
+    .famous-plants .right-palm{
+      display: none;
+    }
+    .famous-plants .left-palm{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
   .swiper {
     background-color: var(--green-color-dark);
     padding: 60px 120px !important;
@@ -183,7 +211,7 @@
   /* Responsev Style Swiper */
   @media (max-width: 768px) {
     .swiper {
-      padding: 15px 40px !important;
+      padding: 30px 40px !important;
     }
 
     .famous-plants .slid-div {
@@ -202,13 +230,13 @@
   .famous-plants .slid-div .image-plant img {
     border-radius: 40px;
     width: 100%;
-    /* height: 100%; */
   }
 
   .famous-plants .slid-div .info {
     text-align: center;
     background-color: var(--bs-body-bg);
     border-radius: 40px;
+    position: relative;
   }
 
   .famous-plants .slid-div .info h5 {
@@ -222,44 +250,54 @@
   .famous-plants .slid-div .info p {
     color: var(--green-color-dark);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: clamp(14px, 17px, 4vw);
+    font-size: clamp(14px, 16px, 4vw);
     font-weight: 900;
-    margin-left: 5px;
+    padding: 10px;
   }
 
   .famous-plants .slid-div .info button {
-    margin-bottom: -10px;
-    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 
   /*End Famous Plants Style*/
   
   /*Start Products Style*/
-  .card-bottom{
+  .card-bottom {
     gap: 5px;
   }
-  .card-text{
+
+  .card-text {
     color: #808080;
     font-size: clamp(12px, 18px, 4vw);
     font-weight: 500;
     line-height: 19px;
     text-align: justify;
   }
-  .card-bottom .btn-card{
-    border-color: var(--green-color-dark);
+
+  .card-bottom .btn-card {
+    color: var(--thre-color);
+    border: 1px solid var(--green-color-dark);
     background-color: var(--green-color-dark);
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
   }
-  .card-bottom .btn-card:hover{
+
+  .card-bottom .btn-card:hover {
     color: var(--green-color-dark);
     background-color: var(--bs-body-bg);
-    border-color: var(--green-color-dark);
   }
+
   .card-bottom .like-icon {
     border-radius: 6px;
     width: 40px;
     height: 40px;
     border-radius: 6px;
-    background-color: #EBEFF8;
+    background-color: var(--thre-color);
     padding: 10px;
     cursor: pointer;
   }

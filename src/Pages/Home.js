@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import Header from "../components/Header";
 import searchIcon from '../images/search 1.svg';
 import logo from '../images/greenLogo.svg';
+import palm from '../images/palm.png';
 import { Link } from "react-router-dom";
 import FamousPlant from '../components/FamousPlant';
 import Prodcuts from '../components/Products';
@@ -36,11 +37,15 @@ function Home() {
                 </Container>
             </div>
             <div className="famous-plants">
-                <div className="caption text-center py-4">
-                    <h2>أشهر النباتات الاقتصادية في السعودية</h2>
-                    <p>وصف قصير وصف قصير وصف قصير</p>
-                </div>
-                <FamousPlant />
+                <Container className=" position-relative">
+                    <div className="caption text-center py-4">
+                        <h2>أشهر النباتات الاقتصادية في السعودية</h2>
+                        <p>وصف قصير وصف قصير وصف قصير</p>
+                    </div>
+                    <span className="palm left-palm"><img src={palm} alt="palm" /></span>
+                    <span className="palm right-palm"><img src={palm} alt="palm" /></span>
+                </Container>
+                    <FamousPlant />
             </div>
             <div className="caption text-center py-4">
                 <h2>منجاتنا</h2>
@@ -50,16 +55,16 @@ function Home() {
                 <Prodcuts />
             </Container>
 
-           <Container className="review-container">
-           <label className="review_title" >المراجعات</label>
-           <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
-           <UserReviewPage />
-           </Container>
+            <Container className="review-container">
+                <label className="review_title" >المراجعات</label>
+                <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
+                <UserReviewPage />
+            </Container>
 
             <Footer />
 
 
-            
+
         </>
     );
 }

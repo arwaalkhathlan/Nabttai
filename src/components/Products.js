@@ -1,4 +1,4 @@
-import { Col, Row, Card, Button } from "react-bootstrap";
+import { Col, Row, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import sabara from '../images/sabra.png';
 import Fee from '../images/fe.jpeg';
@@ -8,7 +8,7 @@ function Prodcuts() {
     return (
         <>
             <Row>
-                <Col>
+                <Col sm={12} md={6} lg={4}>
                     <Card className="border-0">
                         <Card.Img className="rounded-0" variant="top" src={sabara} />
                         <Card.Body className="px-0 py-3">
@@ -23,7 +23,7 @@ function Prodcuts() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col>
+                <Col sm={12} md={6} lg={4}>
                     <Card className="border-0">
                         <Card.Img className="rounded-0" variant="top" src={Fee} />
                         <Card.Body className="px-0 py-3">
@@ -38,7 +38,7 @@ function Prodcuts() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col>
+                <Col sm={12} md={6} lg={4}>
                     <Card className="border-0">
                         <Card.Img className="rounded-0" variant="top" src={Nassem} />
                         <Card.Body className="px-0 py-3">
