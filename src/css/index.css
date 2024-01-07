@@ -18,13 +18,17 @@
     margin: 0;
     padding: 0;
   }
-a{
-  text-decoration: none;
-  color: #000;
-}
-ul,li{
-  list-style-type: none;
-}
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  ul,
+  li {
+    list-style-type: none;
+  }
+
   /* Start Header Style-----------*/
   nav {
     padding-bottom: 35px;
@@ -57,29 +61,33 @@ ul,li{
   /* Start Main Hero Style-------------*/
   .main-hero {
     background-color: var(--green-color-light);
-    
+
   }
+
   .main-hero .right-leaf,
-  .main-hero .left-leaf{
+  .main-hero .left-leaf {
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
     /* z-index: 1; */
   }
-  .main-hero .right-leaf{
+
+  .main-hero .right-leaf {
     width: 300px;
     height: 826px;
     background-image: url(../images/rightleaf.png);
     top: 60px;
     right: 0;
   }
-  .main-hero .left-leaf{
+
+  .main-hero .left-leaf {
     width: 500px;
     height: 500px;
     background-image: url(../images/leav.png);
     bottom: -86px;
     left: 0;
   }
+
   .search-div {
     background-color: var(--sec-light-brown);
     text-align: center;
@@ -92,7 +100,7 @@ ul,li{
       5px 5px 10px 0px rgba(170, 170, 204, 0.50) inset,
       2px 2px 4px 0px rgba(170, 170, 204, 0.25) inset,
       -2px -2px 4px 0px rgba(255, 255, 255, 0.50) inset;
-      /* z-index: 5; */
+    /* z-index: 5; */
   }
 
   .search-div input[type="search"] {
@@ -101,7 +109,8 @@ ul,li{
     outline: none;
     border: none;
   }
-  .search-div input[type="search"]::placeholder{
+
+  .search-div input[type="search"]::placeholder {
     font-weight: 500px;
     font-size: 20px;
   }
@@ -116,31 +125,37 @@ ul,li{
     box-shadow: -5px -5px 10px 0px #FFF,
       5px 5px 10px 0px rgba(170, 170, 204, 0.50);
   }
-  .text-hero  .title {
+
+  .text-hero .title {
     display: inline-flex;
     align-items: flex-end;
     text-align: center;
   }
-  .text-hero  .title h1{
+
+  .text-hero .title h1 {
     font-weight: 700;
     font-size: clamp(25px, 50px, 4vw);
     color: #fff;
     margin-bottom: 18px;
   }
-  .text-hero  .title img {
+
+  .text-hero .title img {
     width: 157px;
     height: 149px;
   }
-  .text-hero p{
+
+  .text-hero p {
     font-size: clamp(20px, 50px, 4vw);
     font-weight: 600;
     color: #fff;
-    
+
   }
-  .text-hero p > span{
+
+  .text-hero p>span {
     color: var(--green-color-dark);
   }
-  .link-hero{
+
+  .link-hero {
     text-decoration: none;
     font-size: clamp(20px, 25px, 4vw);
     color: #3F5B4D;
@@ -149,28 +164,103 @@ ul,li{
     border-radius: 20px;
     font-weight: 700;
   }
+
   /* End Main Hero Style-------------*/
-
-
-  /* review text Section Style-------------*/
-
-  .review-container {
-    padding: 50px 0;
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+  /*Start Famous Plants Style*/
+  .swiper {
+    background-color: var(--green-color-dark);
+    padding: 60px 120px !important;
   }
-  
-  .review_title {
-    font-size: clamp(20px, 25px, 4vw);
-    font-weight: 700;
-    margin-bottom: 20px;
+
+
+  .famous-plants .slid-div {
+    background-color: var(--bs-body-bg);
+    border-radius: 40px;
+    direction: ltr;
+    margin: auto;
   }
-  
-  .review_sub-title {
-    font-size: clamp(16px, 20px, 4vw);
+
+  /* Responsev Style Swiper */
+  @media (max-width: 768px) {
+    .swiper {
+      padding: 15px 40px !important;
+    }
+
+    .famous-plants .slid-div {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .famous-plants .slid-div .image-plant {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    margin: auto;
+  }
+
+  .famous-plants .slid-div .image-plant img {
+    border-radius: 40px;
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .famous-plants .slid-div .info {
+    text-align: center;
+    background-color: var(--bs-body-bg);
+    border-radius: 40px;
+  }
+
+  .famous-plants .slid-div .info h5 {
+    color: var(--green-color-dark);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(20px, 50px, 4vw);
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .famous-plants .slid-div .info p {
+    color: var(--green-color-dark);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(14px, 17px, 4vw);
+    font-weight: 900;
+    margin-left: 5px;
+  }
+
+  .famous-plants .slid-div .info button {
+    margin-bottom: -10px;
+    margin-top: 30px;
+  }
+
+  /*End Famous Plants Style*/
+  /*Start Products Style*/
+  .card-bottom{
+    gap: 5px;
+  }
+  .card-text{
+    color: #808080;
+    font-size: clamp(12px, 18px, 4vw);
     font-weight: 500;
-    margin-bottom: 20px;
+    line-height: 19px;
+    text-align: justify;
   }
-  
+  .card-bottom .btn-card{
+    border-color: var(--green-color-dark);
+    background-color: var(--green-color-dark);
+  }
+  .card-bottom .btn-card:hover{
+    color: var(--green-color-dark);
+    background-color: var(--bs-body-bg);
+    border-color: var(--green-color-dark);
+  }
+  .card-bottom .like-icon {
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #EBEFF8;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  /*End Products Style*/

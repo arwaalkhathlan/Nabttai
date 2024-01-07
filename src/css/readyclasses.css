@@ -8,3 +8,12 @@
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
 }
+.green-btn{
+    color: #fff !important;
+    background-color: var(--green-color-light) !important;
+    border: 1px solid var(--green-color-light) !important;
+}
+.green-btn:hover{
+    color: var(--green-color-light) !important;
+    background-color: #fff !important;
+}

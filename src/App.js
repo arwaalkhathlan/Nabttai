@@ -1,14 +1,18 @@
 import './css/readyclasses.css'
 import './css/index.css';
 import Home from './Pages/Home';
-import ProductsPage from './Pages/ProductsPage';
-
+import { Routes, Route } from 'react-router-dom';
+import OurProducts from './Pages/OurProducts';
+import AboutUs from './Pages/AboutUs';
 function App() {
   return (
     <div className="App">
-      {/* <ProductsPage /> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/OurProducts' element={<OurProducts />} />
+        <Route path='/AboutUs' element={<AboutUs />} />
+      </Routes>
 
-      <Home />
     </div>
   );
 }

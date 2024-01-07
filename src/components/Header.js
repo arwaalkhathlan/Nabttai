@@ -1,28 +1,27 @@
-
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-//import logo from '../images/icon.png';
+import { Link } from 'react-router-dom';
 import svgl from '../images/logo.svg';
-
+import salla from '../images/sallaIcon.svg';
 function Header() {
     return (
-        <Navbar collapseOnSelect expand="lg" className="green-light-bg pb-3 border-bottom-rad">
+        <Navbar collapseOnSelect expand="lg" className="green-light-bg border-bottom-rad">
             <Container>
-                <Navbar.Brand href="#home"><img className='icon-brand' src={svgl} alt='Logo' /></Navbar.Brand>
+                <Link className='navbar-brand' to="/"><img className='icon-brand' src={svgl} alt='Logo' /></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features">الرئيسية</Nav.Link>
-                        <Nav.Link href="#pricing">منجاتنا</Nav.Link>
-                        <Nav.Link href="#">عن نبتتي</Nav.Link>
+                        <Link className='nav-link' to={`/`}>الرئيسية</Link>
+                        <Link className='nav-link' to={`/OurProducts`}>منجاتنا</Link>
+                        <Link className='nav-link' to={`/AboutUs`}>عن نبتتي</Link>
+                        <Link className='nav-link' to={`/`}><img src={salla} alt='sallaicon'/>السلة</Link>
                     </Nav>
                     <Nav className='gap-4 mb-4'>
-                        <Nav.Link className='sign-link' href="">تسجيل دخول</Nav.Link>
-                        <Nav.Link className='sign-link' href="">
+                        <Link className='nav-link sign-link'>تسجيل دخول</Link>
+                        <Link className='nav-link sign-link'>
                             حساب جديد
-                        </Nav.Link>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
