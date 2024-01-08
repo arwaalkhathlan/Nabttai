@@ -4,6 +4,11 @@
   .Button {
     margin-top: 10px;
   }
+
+  .star-col {
+    margin-right: -115px; 
+  }
+  
   
   .Product_label {
     font-size: 1.5rem;
@@ -128,3 +133,5 @@ line-height: normal;
   font-weight: 800;
   line-height: normal;
 }
+
+
