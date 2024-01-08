@@ -4,7 +4,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Button, Row, Col, Container } from 'react-bootstrap';
-import naseem from '../images/naseem.jpeg';
 import Heart_icon from '../images/heart_icon.svg';
 import '../css/products.css';
 import ProductCare from './Productscare';

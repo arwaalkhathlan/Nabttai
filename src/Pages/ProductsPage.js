@@ -1,28 +1,44 @@
-// import { Container } from "react-bootstrap";
+// ProductsPage.js
+import React from 'react';
 import Header from "../components/Header";
-// import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
 import ProductCard from "../components/Product_card";
-import '../css/products.css';
 import { Container } from "react-bootstrap";
+import { useParams } from 'react-router-dom';
+import products from '../data/ProductsData'; // Import the product data
 
 function ProductsPage() {
-    return(
-        <>
-         <Header/>
-         <Container>
-         <ProductCard/>
-         <div className="review-container">
-           <label className="review_title" >المراجعات</label>
-           <br/>
-           <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
-           <UserReviewPage />
-         </div>
-         </Container>
+  const { ProductId } = useParams();
+  const product = products.find((product) => product.id === ProductId);
 
-            <Footer/>
-        </>
-    )
+  if (!product) {
+    
+    return <div>Product not found</div>;
+  }
+
+  return (
+    <>
+      <Header />
+      <Container>
+
+        
+        <ProductCard
+          imageUrl={product.imageUrl}
+          name={product.name}
+          description={product.description}
+        />
+
+        <Container className="review-container">
+          <label className="review_title">المراجعات</label>
+          <br />
+          <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
+          <UserReviewPage />
+        </Container>
+      </Container>
+      <Footer />
+    </>
+  );
 }
+
 export default ProductsPage;
