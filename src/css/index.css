@@ -332,3 +332,11 @@
   }
 
   /*End About Style*/
+  /*Start Story Style*/
+  .story-section{
+    background-image: url(../images/background_green.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* End Story Style*/
