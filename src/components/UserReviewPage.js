@@ -5,7 +5,7 @@ import userReviewData from '../data/userReviewData';
 
 const UserReviewPage = () => {
   return (
-    <Container fluid>
+    <Container >
       <Row className="justify-content-around">
         {userReviewData.map((review) => (
           <Col key={review.id} xs={12} sm={12} md={6} lg={4}>
