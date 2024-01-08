@@ -105,7 +105,7 @@ function PlantsStories() {
           <div className="plant_info">
             <img 
             src={plant_info}
-
+            alt={product.name}
             />
           
           </div>
