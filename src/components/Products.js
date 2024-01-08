@@ -12,9 +12,12 @@ function Prodcuts() {
                     <Card className="border-0">
                         <Card.Img className="rounded-0" variant="top" src={sabara} />
                         <Card.Body className="px-0 py-3">
-                            <Card.Title className="fw-bold">صبرا</Card.Title>
+                            <div className="d-flex fw-bold justify-content-between">
+                                <Card.Title>صبرا</Card.Title>
+                                <span>50 ريال</span>
+                            </div>
                             <Card.Text>
-                                وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج
+                            نبات صبار صغير مزين بزهور وردية اللون في حوض زجاجي يحتوي على رمل و أحجار ملونة. 
                             </Card.Text>
                             <div className="card-bottom d-flex">
                                 <Link to={`/ProdcutPage/1`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
@@ -27,9 +30,12 @@ function Prodcuts() {
                     <Card className="border-0">
                         <Card.Img className="rounded-0" variant="top" src={Fee} />
                         <Card.Body className="px-0 py-3">
-                            <Card.Title className="fw-bold">فيّ</Card.Title>
+                            <div className="d-flex fw-bold justify-content-between">
+                                <Card.Title>فيّ</Card.Title>
+                                <span>150 ريال</span>
+                            </div>
                             <Card.Text>
-                                وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج
+                                نبتة الألوفيرا حجم صغير في حوض من الفخار
                             </Card.Text>
                             <div className="card-bottom d-flex">
                                 <Link to={`/ProdcutPage/2`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
@@ -42,9 +48,12 @@ function Prodcuts() {
                     <Card className="border-0">
                         <Card.Img className="rounded-0" variant="top" src={Nassem} />
                         <Card.Body className="px-0 py-3">
-                            <Card.Title className="fw-bold">نسيم</Card.Title>
+                            <div className="d-flex fw-bold justify-content-between">
+                                <Card.Title>نسيم</Card.Title>
+                                <span>250 ريال</span>
+                            </div>
                             <Card.Text>
-                                وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج  وصف المنتج وصف المنتج وصف المنتج وصف المنتج وصف المنتج
+                                نبتة بونساي حجم صغير في حوض حجري
                             </Card.Text>
                             <div className="card-bottom d-flex">
                                 <Link to={`/ProdcutPage/3`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import icon_green from '../images/icon_green.png';
+import logo from '../images/greenLogo.svg';
+
 
 const Footer = () => {
   const [iconSize, setIconSize] = useState(130);
@@ -24,7 +25,7 @@ const Footer = () => {
     backgroundColor: '#F2F1EB',
     borderRadius: '30px 30px 0 0',
     boxShadow: '0px -4px 8px rgba(0, 0, 0, 0.1)',
-    padding: '20px 15px', 
+    padding: '20px 15px',
   };
 
   const linkStyle = {
@@ -33,16 +34,16 @@ const Footer = () => {
     marginRight: '5px',
   };
 
-  const linkStyleemail = {
-    color: '#3F5B4D',
-    marginRight: '-13px',
-    listStyle: 'none',
-  };
+  // const linkStyleemail = {
+  //   color: '#3F5B4D',
+  //   marginRight: '-13px',
+  //   listStyle: 'none',
+  // };
 
-  const hoverLinkStyle = {
-    color: 'black',
-    textDecoration: 'underline',
-  };
+  // const hoverLinkStyle = {
+  //   color: 'black',
+  //   textDecoration: 'underline',
+  // };
 
   const subscriptionFormStyle = {
     marginTop: '10px',
@@ -80,7 +81,7 @@ const Footer = () => {
       <Container>
         <Row className="d-flex align-items-center">
           <Col md={2}>
-            <img src={icon_green} alt="Logo" style={iconStyle} />
+            <img src={logo} alt="Logo" style={iconStyle} />
           </Col>
 
           <Col md={3} className="mb-3">
@@ -103,7 +104,7 @@ const Footer = () => {
             <Form className="d-flex flex-column align-items-start">
               <Form.Group controlId="subscriptionForm" className="mb-0">
                 <Form.Label className="mr-2">النشرة البريدية</Form.Label>
-                <br/>
+                <br />
                 <Form.Text className="text-muted">كن مطلعًا على آخر الأخبار موقع نبتتي</Form.Text>
                 <div className="d-flex">
                   <Form.Control type="email" placeholder="البريد الالكتروني" style={formControlStyle} />

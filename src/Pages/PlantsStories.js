@@ -16,25 +16,8 @@ function PlantsStories() {
   if (!product) {
     return <div>Story not found</div>;
   }
-
-  const backround={
-    
-  };
-
-  const containerStyle = {
-    background: '#3F5B4D',
-    minHeight: '100vh',
-    padding: '300px 0 300px 0px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-
-  };
-
   const whiteBoxStyle = {
     background: '#fff',
-    width: '80%',
-    height: '702px',
     borderRadius: '49px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.8)',
     display: 'flex',
@@ -43,11 +26,12 @@ function PlantsStories() {
 
   const whiteBoxStyle2 = {
     background: '#fff',
-    width: 'auto',
     height: '320px',
     borderRadius: '50px',
     boxShadow: '0 4px 8px rgba(0.8, 0, 0, 0.8)',
     display: 'flex',
+    margin: 'auto 25px',
+    paddingLeft: '15px',
   };
 
   const imagePlantStyle = {
@@ -67,59 +51,57 @@ function PlantsStories() {
     flex: '1',
     padding: '20px',
   };
-  
+
 
   return (
-    <div className="backround">
+    <div className="story-section">
       <Header />
-      <Container fluid style={containerStyle}>
+      <Container className='py-4'>
         <div className="story-div" style={whiteBoxStyle}>
           <div className="info" style={infoStyle}>
 
-            
+
             <div className="Storylabel"><h1>{product.storyname}</h1></div>
             <div className="StoryText">
 
-            <p >{product.story}</p>
+              <p >{product.story}</p>
 
             </div>
           </div>
           <div className="image-plant" style={imagePlantStyle}>
-            <img
+            <img className='image-respon'
               src={product.imageUrl2}
               alt={product.name}
-              style={{ width: '100%', height: '100%' }}
             />
           </div>
-          </div>
+        </div>
 
-           <div className="story-div" style={whiteBoxStyle2}>
-           <div className="image-plant" style={imagePlantStyle2}>
-            <img
+        <div className="story-div" style={whiteBoxStyle2}>
+          <div className="image-plant" style={imagePlantStyle2}>
+            <img className='image-respon'
               src={product.imageUrl3}
               alt={product.name}
-              style={{ width: '100%', height: '100%' }}
             />
           </div>
 
           <div className="box2_text">
-          <text > احتياجات {product.name}</text>
+            <text > احتياجات {product.name}</text>
           </div>
 
           <div className="plant_info">
-            <img 
-            src={plant_info}
-            alt={product.name}
+            <img
+              src={plant_info}
+              alt={product.name}
             />
-          
+
           </div>
 
-            
-                <Link to={`/OurProducts`} className="button_box2">
-                لإضافة فيّ للسلة
-                </Link>
-                
-           </div>
+
+          <Link to={`/OurProducts`} className="button_box2">
+            لإضافة فيّ للسلة
+          </Link>
+
+        </div>
 
       </Container>
       <Footer />

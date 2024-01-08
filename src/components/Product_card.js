@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import { Card, Button, Row, Col, Container } from 'react-bootstrap';
 import Heart_icon from '../images/heart_icon.svg';
 import '../css/products.css';
@@ -7,7 +7,8 @@ import '../css/products.css';
 import like from '../images/likeicon.svg';
 
 const ProductCard = ({ imageUrl, name, description, onPurchase }) => {
-  const params = useParams();
+  // const params = useParams();
+  
 
   return (
     <Container style={{ marginTop: '100px' }}>
