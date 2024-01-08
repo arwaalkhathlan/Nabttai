@@ -15,12 +15,6 @@
     "swiper": "^11.0.5",
     "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^1.0.10"
-  },
-  "resolutions": {
-    "@babel/plugin-proposal-private-property-in-object": "^1.0.10"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
