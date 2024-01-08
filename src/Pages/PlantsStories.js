@@ -5,7 +5,6 @@ import { useParams, Link } from 'react-router-dom';
 import products from '../data/ProductsData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import background_green from '../images/background_green.png';
 import plant_info from '../images/plant_info.png';
 
 import '../css/products.css';
@@ -17,6 +16,10 @@ function PlantsStories() {
   if (!product) {
     return <div>Story not found</div>;
   }
+
+  const backround={
+    
+  };
 
   const containerStyle = {
     background: '#3F5B4D',
@@ -67,7 +70,7 @@ function PlantsStories() {
   
 
   return (
-    <>
+    <div className="backround">
       <Header />
       <Container fluid style={containerStyle}>
         <div className="story-div" style={whiteBoxStyle}>
@@ -106,7 +109,7 @@ function PlantsStories() {
           <div className="plant_info">
             <img 
             src={plant_info}
-
+            alt={product.name}
             />
           
           </div>
@@ -120,7 +123,7 @@ function PlantsStories() {
 
       </Container>
       <Footer />
-    </>
+    </div>
   );
 }
 
