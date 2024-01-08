@@ -2,12 +2,11 @@ import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import logo from '../images/greenLogo.svg';
-import palm from '../images/palm.png';
 import searchIcon from '../images/search 1.svg';
 
-import '../css/readyclasses.css';
-import '../css/index.css';
-import '../css/products.css';
+// import '../css/readyclasses.css';
+// import '../css/index.css';
+// import '../css/products.css';
 
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
@@ -42,33 +41,24 @@ function Home() {
             </div>
             <div className="famous-plants">
                 <Container className=" position-relative">
-                    <div className="caption text-center py-4">
-                        <h2>أشهر النباتات الاقتصادية في السعودية</h2>
-                        <p>وصف قصير وصف قصير وصف قصير</p>
+                    <div className="caption text-center py-4 my-3">
+                        <h2 className="fw-bold">تَعرّف على النباتات وميزاتها من خلال القصص الممتعة! </h2>
                     </div>
-                    <span className="palm left-palm"><img src={palm} alt="palm" /></span>
-                    <span className="palm right-palm"><img src={palm} alt="palm" /></span>
                 </Container>
-                    <FamousPlant />
+                <FamousPlant />
             </div>
             <div className="caption text-center py-4">
-                <h2>منجاتنا</h2>
-                <p>وصف قصير وصف قصير وصف قصير</p>
+                <h2 className="fw-bold">منجاتنا</h2>
+                <p className="descrp">نقدم في نبتتي أفضل النباتات الداخلية</p>
             </div>
             <Container>
                 <Prodcuts />
             </Container>
-
-            <Container className="review-container">
-                <label className="review_title" >العملاء</label>
-                <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
+            <Container className="review-container py-4">
+                <h2 className="fw-bold" >تجارب عملاءَنا</h2>
                 <UserReviewPage />
             </Container>
-
             <Footer />
-
-
-
         </>
     );
 }

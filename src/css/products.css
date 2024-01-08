@@ -55,11 +55,6 @@
   margin-bottom: 20px;
 }
 
-.review_sub-title{
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
 .review-container{
   display: flex;
   flex-direction: column;

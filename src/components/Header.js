@@ -17,7 +17,7 @@ function Header() {
                         <Link className='nav-link' to={`/AboutUs`}>عن نبتتي</Link>
                         <Link className='nav-link' to={`/`}><img src={salla} alt='sallaicon'/>السلة</Link>
                     </Nav>
-                    <Nav className='gap-4 mb-4'>
+                    <Nav className='sign-div gap-2'>
                         <Link className='nav-link sign-link'>تسجيل دخول</Link>
                         <Link className='nav-link sign-link'>
                             حساب جديد
