@@ -5,6 +5,8 @@ import nseemImg from '../images/naseem.jpeg';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import { Link } from "react-router-dom";
+
 
 function FamousPlant() {
     return (
@@ -22,7 +24,8 @@ function FamousPlant() {
                         <div className="info">
                             <h5>فيّ</h5>
                             <p>جمال الصمود تأخذنا في رحلة مشوقة إلى عالمٍ ساحر، حيث تتعايش الطبيعة الخلابة مع روح الإصرار والأمل. تستعرض القصة قوة الصمود والتأقلم في وجه التحديات، وتجسد قوة العلاقات الإنسانية في تحقيق التغيير والنمو.</p>
-                            <button className="btn rounded-5 green-btn">للمزيد</button>
+                            
+                            <Link to={`/PlantsStories/2`} className="btn rounded-5 green-btn" > للمزيد </Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -32,7 +35,7 @@ function FamousPlant() {
                         <div className="info">
                             <h5>صبرا</h5>
                             <p>في قريةٍ بعيدة، تنمو نبتةٌ ساحرة تُدعى صبرا. بجمالها الخلاب وقوتها الداخلية، تلهم الناس وتُذَكِّرهم بأهمية الصمود والأمل. تتحول صبرا إلى رمزٍ للقوة والتكيف، وسرعان ما تنتشر شهرتها في الأرجاء. وسط الصعاب والتحديات، هل ستواصل صبرا تألقها وتحقيق الجمال الذي تعد به؟</p>
-                            <button className="btn rounded-5 green-btn">للمزيد</button>
+                            <Link to={`/PlantsStories/1`} className="btn rounded-5 green-btn" > للمزيد </Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -42,7 +45,7 @@ function FamousPlant() {
                         <div className="info">
                             <h5>نسييم</h5>
                             <p>في جنبات الغابة، اكتشف يوسف نَسيم، النبتة الصغيرة التي غيرت حياته، فما هي القصة المدهشة وراء هذا الاكتشاف؟</p>
-                            <button className="btn rounded-5 green-btn">للمزيد</button>
+                            <Link to={`/PlantsStories/3`} className="btn rounded-5 green-btn" > للمزيد </Link>
                         </div>
                     </div>
                 </SwiperSlide>

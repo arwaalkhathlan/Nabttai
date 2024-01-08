@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
   
   .Button {
@@ -63,4 +64,67 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* plant story */
+
+.StoryText {
+  color: #3F5B4D;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Tajawal;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+.Storylabel {
+  color: #3F5B4D;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Tajawal;
+font-size: 55px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+
+.box2_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3F5B4D;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-right: 20px;
+}
+
+.plant_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button_box2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 136px;
+  width: 292px;
+  border-radius: 20px;
+  background: #88AB8E;
+  margin: 90px 0 0px 20px;
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }

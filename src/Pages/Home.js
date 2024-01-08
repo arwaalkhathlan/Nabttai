@@ -1,17 +1,20 @@
 import { Container } from "react-bootstrap";
-import Header from "../components/Header";
-import searchIcon from '../images/search 1.svg';
+import { Link } from "react-router-dom";
+
 import logo from '../images/greenLogo.svg';
 import palm from '../images/palm.png';
-import { Link } from "react-router-dom";
-import FamousPlant from '../components/FamousPlant';
-import Prodcuts from '../components/Products';
+import searchIcon from '../images/search 1.svg';
+
 import '../css/readyclasses.css';
 import '../css/index.css';
 import '../css/products.css';
 
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
+import FamousPlant from '../components/FamousPlant';
+import Prodcuts from '../components/Products';
+import Header from "../components/Header";
+
 function Home() {
     return (
         <>

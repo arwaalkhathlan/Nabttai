@@ -1,12 +1,15 @@
 // ProductsPage.js
 import React from 'react';
+import { Container } from "react-bootstrap";
+import { useParams } from 'react-router-dom';
+
+import products from '../data/ProductsData'; 
+
 import Header from "../components/Header";
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
 import ProductCard from "../components/Product_card";
-import { Container } from "react-bootstrap";
-import { useParams } from 'react-router-dom';
-import products from '../data/ProductsData'; // Import the product data
+
 
 function ProductsPage() {
   const { ProductId } = useParams();
