@@ -34,16 +34,16 @@ const Footer = () => {
     marginRight: '5px',
   };
 
-  const linkStyleemail = {
-    color: '#3F5B4D',
-    marginRight: '-13px',
-    listStyle: 'none',
-  };
+  // const linkStyleemail = {
+  //   color: '#3F5B4D',
+  //   marginRight: '-13px',
+  //   listStyle: 'none',
+  // };
 
-  const hoverLinkStyle = {
-    color: 'black',
-    textDecoration: 'underline',
-  };
+  // const hoverLinkStyle = {
+  //   color: 'black',
+  //   textDecoration: 'underline',
+  // };
 
   const subscriptionFormStyle = {
     marginTop: '10px',

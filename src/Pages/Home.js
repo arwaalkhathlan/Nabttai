@@ -48,7 +48,7 @@ function Home() {
                 <FamousPlant />
             </div>
             <div className="caption text-center py-4">
-                <h2 className="fw-bold">منجاتنا</h2>
+                <h2 className="fw-bold">منتجاتنا</h2>
                 <p className="descrp">نقدم في نبتتي أفضل النباتات الداخلية</p>
             </div>
             <Container>

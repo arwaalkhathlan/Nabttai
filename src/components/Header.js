@@ -13,7 +13,7 @@ function Header() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Link className='nav-link' to={`/`}>الرئيسية</Link>
-                        <Link className='nav-link' to={`/OurProducts`}>منجاتنا</Link>
+                        <Link className='nav-link' to={`/OurProducts`}>منتجاتنا</Link>
                         <Link className='nav-link' to={`/AboutUs`}>عن نبتتي</Link>
                         <Link className='nav-link' to={`/`}><img src={salla} alt='sallaicon'/>السلة</Link>
                     </Nav>
