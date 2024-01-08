@@ -17,6 +17,10 @@ function PlantsStories() {
     return <div>Story not found</div>;
   }
 
+  const backround={
+    
+  };
+
   const containerStyle = {
     background: '#3F5B4D',
     minHeight: '100vh',
@@ -66,7 +70,7 @@ function PlantsStories() {
   
 
   return (
-    <>
+    <div className="backround">
       <Header />
       <Container fluid style={containerStyle}>
         <div className="story-div" style={whiteBoxStyle}>
@@ -119,7 +123,7 @@ function PlantsStories() {
 
       </Container>
       <Footer />
-    </>
+    </div>
   );
 }
 
