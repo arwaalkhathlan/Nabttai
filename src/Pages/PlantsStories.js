@@ -31,7 +31,7 @@ function PlantsStories() {
     boxShadow: '0 4px 8px rgba(0.8, 0, 0, 0.8)',
     display: 'flex',
     margin: 'auto 25px',
-    paddingLeft: '15px'
+    paddingLeft: '15px',
   };
 
   const imagePlantStyle = {
