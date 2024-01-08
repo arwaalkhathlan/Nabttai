@@ -8,6 +8,7 @@ import FamousPlant from '../components/FamousPlant';
 import Prodcuts from '../components/Products';
 import '../css/readyclasses.css';
 import '../css/index.css';
+import '../css/products.css';
 
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
@@ -56,7 +57,7 @@ function Home() {
             </Container>
 
             <Container className="review-container">
-                <label className="review_title" >المراجعات</label>
+                <label className="review_title" >العملاء</label>
                 <text className="review_sub-title">  في نبتتي نحرص على أراكم </text>
                 <UserReviewPage />
             </Container>
