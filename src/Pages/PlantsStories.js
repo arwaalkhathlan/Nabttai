@@ -5,7 +5,6 @@ import { useParams, Link } from 'react-router-dom';
 import products from '../data/ProductsData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import background_green from '../images/background_green.png';
 import plant_info from '../images/plant_info.png';
 
 import '../css/products.css';
