@@ -1,5 +1,3 @@
-import './css/readyclasses.css'
-import './css/index.css';
 import Home from './Pages/Home';
 import { Routes, Route } from 'react-router-dom';
 import OurProducts from './Pages/OurProducts';

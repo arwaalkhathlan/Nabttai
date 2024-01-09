@@ -1,4 +1,46 @@
-  /*Start Story Style*/
-  .story-section{
+/*Start Story Style*/
+.story-section {
+}
+.story-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  .image-plant {
+    min-width: 550px;
+    border-radius: 16px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      border-radius: 16px;
+    }
   }
-  /* End Story Style*/
+  @include breakPoint("mobile"){
+    .image-plant{
+      display: none;
+    }
+  }
+  @include breakPoint("large"){
+    .image-plant{
+      min-width: 350px;
+    }
+  }
+  .storylabel h1 {
+    color: $dark-green-color;
+    text-align: start;
+    font-size: clamp(20px, 30px, $font-size-vw);
+    font-weight: bold;
+  }
+  .storyText {
+    color: $dark-green-color;
+    text-align: justify;
+    font-size: clamp(17px, 25px, $font-size-vw);
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+@include breakPoint("large"){
+  .story-div{
+    flex-direction: column;
+  }
+}
+/* End Story Style*/

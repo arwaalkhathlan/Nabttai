@@ -22,13 +22,9 @@ function PlantsStories() {
       <Container className='py-4'>
         <div className="story-div">
           <div className="info">
-
-
-            <div className="Storylabel"><h1>{product.storyname}</h1></div>
-            <div className="StoryText">
-
+            <div className="storylabel"><h1>{product.storyname}</h1></div>
+            <div className="storyText">
               <p >{product.story}</p>
-
             </div>
           </div>
           <div className="image-plant">
@@ -38,34 +34,20 @@ function PlantsStories() {
             />
           </div>
         </div>
-
-        <div className="story-div">
-          <div className="image-plant">
-            <img className='image-respon'
-              src={product.imageUrl3}
-              alt={product.name}
-            />
-          </div>
-
+        <div className="story-div box-shadow my-4">
           <div className="box2_text">
             <text > احتياجات {product.name}</text>
           </div>
-
           <div className="plant_info">
             <img
               src={plant_info}
               alt={product.name}
             />
-
           </div>
-
-
           <Link to={`/OurProducts`} className="button_box2">
             لإضافة فيّ للسلة
           </Link>
-
         </div>
-
       </Container>
       <Footer />
     </div>

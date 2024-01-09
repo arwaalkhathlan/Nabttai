@@ -8,6 +8,7 @@ $white-color: #ffffff;
 $title-color: #4B545A;
 $font-size-vw: 4vw;
 $slid-radius: 60px;
+$box-radius: 16px;
 // دالة  الميديا لضبط العناصر في الشاشات الصغرى
 @mixin breakPoint($point) {
   @if $point == "mobile" {
@@ -26,7 +27,7 @@ $slid-radius: 60px;
     }
   }
   @if $point == "large" {
-    @media (min-width: 1200px) {
+    @media (max-width: 1200px) {
       @content;
     }
   }
