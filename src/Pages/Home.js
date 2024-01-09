@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import logo from '../images/greenLogo.svg';
 import searchIcon from '../images/search 1.svg';
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
