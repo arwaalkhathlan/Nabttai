@@ -14,13 +14,13 @@
       border-radius: 16px;
     }
   }
-  @include breakPoint("mobile"){
-    .image-plant{
+  @include breakPoint("mobile") {
+    .image-plant {
       display: none;
     }
   }
-  @include breakPoint("large"){
-    .image-plant{
+  @include breakPoint("large") {
+    .image-plant {
       min-width: 350px;
     }
   }
@@ -38,9 +38,51 @@
     line-height: normal;
   }
 }
-@include breakPoint("large"){
-  .story-div{
+@include breakPoint("large") {
+  .story-div {
     flex-direction: column;
+  }
+}
+.needs {
+  border-radius: $box-radius;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.box2_text {
+  color: $dark-green-color;
+  padding: 15px;
+  text-align: center;
+  font-size: clamp(17px, 25px, $font-size-vw);
+  font-weight: 800;
+  line-height: normal;
+  border-left: 1px solid $dark-green-color;
+}
+
+.plant_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button_box2 {
+  border-radius: $box-radius;
+  background-color: $dark-green-color;
+  color: $white-color;
+  text-align: center;
+  text-decoration: none;
+  font-size: clamp(20px, 25px, 4vw);
+  font-weight: 800;
+  padding: 15px;
+}
+@include breakPoint("mobile") {
+  .needs {
+    flex-wrap: wrap;
+  }
+  .box2_text{
+    border-left: none;
   }
 }
 /* End Story Style*/

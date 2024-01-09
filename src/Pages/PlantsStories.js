@@ -34,7 +34,7 @@ function PlantsStories() {
             />
           </div>
         </div>
-        <div className="story-div box-shadow my-4">
+        <div className="d-flex needs box-shadow my-4">
           <div className="box2_text">
             <text > احتياجات {product.name}</text>
           </div>

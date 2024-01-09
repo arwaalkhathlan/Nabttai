@@ -336,4 +336,47 @@ nav .new-sign-in:hover {
     flex-direction: column;
   }
 }
+.needs {
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.box2_text {
+  color: #3f5b4d;
+  padding: 15px;
+  text-align: center;
+  font-size: clamp(17px, 25px, 4vw);
+  font-weight: 800;
+  line-height: normal;
+  border-left: 1px solid #3f5b4d;
+}
+
+.plant_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button_box2 {
+  border-radius: 16px;
+  background-color: #3f5b4d;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: clamp(20px, 25px, 4vw);
+  font-weight: 800;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .needs {
+    flex-wrap: wrap;
+  }
+  .box2_text {
+    border-left: none;
+  }
+}
 /* End Story Style*/
