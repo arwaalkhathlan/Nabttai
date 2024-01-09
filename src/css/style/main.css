@@ -73,13 +73,29 @@ nav .nav-link {
 }
 nav .sign-link {
   font-size: clamp(12px, 20px, 4vw);
-  border: 2px solid #ffffff;
   border-radius: 10px;
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 2px solid;
 }
-nav .sign-link:hover {
-  background-color: #ffffff;
-  color: #88ab8e;
+nav .sign-in {
+  background-color: #3f5b4d;
+  border-color: transparent;
+}
+nav .sign-in:hover {
+  background-color: transparent;
+  border: 2px solid #3f5b4d;
+}
+nav .new-sign-in {
+  border: 2px solid #3f5b4d;
+  color: #3f5b4d;
+}
+nav .new-sign-in:hover {
+  background-color: #3f5b4d;
+  color: #ffffff;
 }
 
 /* End Header Style-------------*/
@@ -93,7 +109,7 @@ nav .sign-link:hover {
   border-radius: 20px;
   display: inline-flex;
   align-items: center;
-  padding: 12px 59px 12px 19px;
+  padding: 16px;
   width: min(600px, 100%);
 }
 .main-hero .search-div input[type=search] {
@@ -110,7 +126,6 @@ nav .sign-link:hover {
   width: 40px;
   height: 40px;
   padding: 8px;
-  background-color: #eee7da;
   cursor: pointer;
   border-radius: 32px;
   box-shadow: -5px -5px 10px 0px #fff, 5px 5px 10px 0px rgba(170, 170, 204, 0.5);
@@ -120,16 +135,15 @@ nav .sign-link:hover {
   display: inline-flex;
   align-items: flex-end;
   text-align: center;
-}
-.text-hero .title h1 {
-  font-weight: 700;
-  font-size: clamp(25px, 50px, 4vw);
-  color: #fff;
   margin-bottom: 18px;
 }
-.text-hero .title img {
-  width: 157px;
-  height: 149px;
+.text-hero .title h1, .text-hero .title > span {
+  font-weight: 700;
+  font-size: clamp(25px, 50px, 4vw);
+  color: #ffffff;
+}
+.text-hero .title span {
+  color: #3f5b4d;
 }
 .text-hero p {
   font-size: clamp(20px, 50px, 4vw);
@@ -140,14 +154,79 @@ nav .sign-link:hover {
   color: #3f5b4d;
 }
 
-.link-hero {
-  text-decoration: none;
-  font-size: clamp(20px, 25px, 4vw);
-  color: #3f5b4d;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: 700;
+/* End Main Hero Style-------------*/
+/*Start Famous Plants Style*/
+.swiper {
+  padding: 60px 100px !important;
 }
 
-/* End Main Hero Style-------------*/
+.famous-plants .caption {
+  color: #4B545A;
+}
+
+.famous-plants .slid-div {
+  border-radius: 25px;
+  direction: ltr;
+  margin: auto;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .famous-plants .slid-div {
+    padding: 10px;
+  }
+}
+/* Responsev Style Swiper */
+@media (max-width: 768px) {
+  .swiper {
+    padding: 30px !important;
+  }
+  .famous-plants .slid-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.famous-plants .slid-div .image-plant {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.famous-plants .slid-div .image-plant img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.famous-plants .slid-div .info {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+
+.famous-plants .slid-div .info h5 {
+  color: #3f5b4d;
+  font-size: clamp(20px, 50px, 4vw);
+  font-weight: 800;
+  line-height: normal;
+}
+
+.famous-plants .slid-div .info p {
+  color: #3f5b4d;
+  font-size: clamp(14px, 16px, 4vw);
+  font-weight: 900;
+  padding: 10px;
+}
+
+.famous-plants .slid-div .info a.green-btn {
+  display: block;
+  margin: 10px 100px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .famous-plants .slid-div .info a.green-btn {
+    margin: 10px;
+  }
+}
+/*End Famous Plants Style*/

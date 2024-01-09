@@ -7,7 +7,7 @@
     border-radius: 20px;
     display: inline-flex;
     align-items: center;
-    padding: 12px 59px 12px 19px;
+    padding: 16px;
     width: min(600px, 100%);
 
     input[type="search"] {
@@ -26,7 +26,6 @@
       width: 40px;
       height: 40px;
       padding: 8px;
-      background-color: $light-brown-color;
       cursor: pointer;
       border-radius: 32px;
       box-shadow: -5px -5px 10px 0px #fff,
@@ -39,16 +38,15 @@
     display: inline-flex;
     align-items: flex-end;
     text-align: center;
-
-    h1 {
+    margin-bottom: 18px;
+    h1,
+    & > span {
       font-weight: 700;
       font-size: clamp(25px, 50px, 4vw);
-      color: #fff;
-      margin-bottom: 18px;
+      color: $white-color;
     }
-    img {
-      width: 157px;
-      height: 149px;
+    span {
+      color: $dark-green-color;
     }
   }
 
@@ -61,14 +59,79 @@
     }
   }
 }
-
-.link-hero {
-  text-decoration: none;
-  font-size: clamp(20px, 25px, $font-size-vw);
-  color: $dark-green-color;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: 700;
-}
 /* End Main Hero Style-------------*/
+/*Start Famous Plants Style*/
+.swiper {
+  padding: 60px 100px !important;
+}
+.famous-plants .caption{
+    color: $title-color;
+}
+.famous-plants .slid-div {
+  border-radius: 25px;
+  direction: ltr;
+  margin: auto;
+  padding: 30px;
+}
+@include breakPoint("mobile") {
+  .famous-plants .slid-div {
+    padding: 10px;
+  }
+}
+
+/* Responsev Style Swiper */
+@media (max-width: 768px) {
+  .swiper {
+    padding: 30px !important;
+  }
+
+  .famous-plants .slid-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.famous-plants .slid-div .image-plant {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.famous-plants .slid-div .image-plant img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.famous-plants .slid-div .info {
+  text-align: center;
+  background-color: $white-color;
+  border-radius: 40px;
+}
+
+.famous-plants .slid-div .info h5 {
+  color: $dark-green-color;
+  font-size: clamp(20px, 50px, $font-size-vw);
+  font-weight: 800;
+  line-height: normal;
+}
+
+.famous-plants .slid-div .info p {
+  color: $dark-green-color;
+  font-size: clamp(14px, 16px, $font-size-vw);
+  font-weight: 900;
+  padding: 10px;
+}
+
+.famous-plants .slid-div .info a.green-btn {
+    display: block;
+    margin: 10px 100px;
+    padding: 10px;
+}
+@include breakPoint("mobile"){
+    .famous-plants .slid-div .info a.green-btn {
+        margin: 10px;
+    }
+}
+
+/*End Famous Plants Style*/

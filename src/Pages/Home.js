@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 
 import logo from '../images/greenLogo.svg';
 import searchIcon from '../images/search 1.svg';
-
-// import '../css/readyclasses.css';
-// import '../css/index.css';
-// import '../css/products.css';
-
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
 import FamousPlant from '../components/FamousPlant';
@@ -29,19 +24,15 @@ function Home() {
                     <div className="text-hero">
                         <div className="title my-3">
                             <h1>مرحباً بك في </h1>
-                            <img src={logo} alt="logo" />
+                            <span>نبتتي</span>
                         </div>
                         <p> المكان المثالي لاكتشاف عالم النباتات <span>وجمالها!</span></p>
-                        <div className="d-flex gap-4 justify-content-center pb-3">
-                            <Link className="link-hero">اكتشف الان</Link>
-                            <Link className="link-hero">اقتني الان</Link>
-                        </div>
                     </div>
                 </Container>
             </div>
             <div className="famous-plants">
                 <Container className=" position-relative">
-                    <div className="caption text-center py-4 my-3">
+                    <div className="caption text-center pt-3 mt-5">
                         <h2 className="fw-bold">تَعرّف على النباتات وميزاتها من خلال القصص الممتعة! </h2>
                     </div>
                 </Container>

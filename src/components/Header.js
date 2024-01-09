@@ -11,15 +11,15 @@ function Header() {
                 <Link className='navbar-brand' to="/"><img className='icon-brand' src={svgl} alt='Logo' /></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-4">
+                    <Nav className="me-auto">
                         <Link className='nav-link' to={`/`}>الرئيسية</Link>
                         <Link className='nav-link' to={`/OurProducts`}>منتجاتنا</Link>
                         <Link className='nav-link' to={`/AboutUs`}>عن نبتتي</Link>
-                        <Link className='nav-link' to={`/`}><img src={salla} alt='sallaicon'/>السلة</Link>
+                        <Link className='nav-link' to={`/`}><img src={salla} alt='salla-icon' /> السلة</Link>
                     </Nav>
                     <Nav className='sign-div gap-2'>
-                        <Link className='nav-link sign-link'>تسجيل دخول</Link>
-                        <Link className='nav-link sign-link'>
+                        <Link className='sign-link sign-in'>تسجيل دخول</Link>
+                        <Link className='sign-link new-sign-in'>
                             حساب جديد
                         </Link>
                     </Nav>
