@@ -65,9 +65,6 @@
 .swiper {
   padding: 60px 100px !important;
 }
-.famous-plants .caption {
-  color: $title-color;
-}
 .famous-plants .slid-div {
   border-radius: 25px;
   direction: ltr;
@@ -138,9 +135,6 @@
 /*End Famous Plants Style*/
 
 /*Start Products Style*/
-.caption h2{
-    color: $title-color;
-}
 .caption .descrp {
   color: #808080;
   font-size: clamp(15px, 22px, $font-size-vw);

@@ -30,20 +30,20 @@ function Home() {
             <div className="famous-plants">
                 <Container className=" position-relative">
                     <div className="caption text-center pt-3 mt-5">
-                        <h2 className="fw-bold">تَعرّف على النباتات وميزاتها من خلال القصص الممتعة! </h2>
+                        <h2 className="text-title fw-bold">تَعرّف على النباتات وميزاتها من خلال القصص الممتعة! </h2>
                     </div>
                 </Container>
                 <FamousPlant />
             </div>
             <div className="caption text-center py-4">
-                <h2 className="fw-bold">منتجاتنا</h2>
+                <h2 className="text-title fw-bold">منتجاتنا</h2>
                 <p className="descrp">نقدم في نبتتي أفضل النباتات الداخلية</p>
             </div>
             <Container>
                 <Prodcuts />
             </Container>
             <Container className="review-container py-4">
-                <h2 className="fw-bold" >تجارب عملاءَنا</h2>
+                <h2 className="text-title fw-bold" >تجارب عملاءَنا</h2>
                 <UserReviewPage />
             </Container>
             <Footer />

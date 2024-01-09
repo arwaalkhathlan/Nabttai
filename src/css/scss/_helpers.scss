@@ -21,6 +21,9 @@
 .icon-brand {
   width: clamp(100px, 120px, $font-size-vw);
 }
+.text-title{
+  color: $title-color;
+}
 .box-shadow {
   box-shadow: 0px 0px 16px 0px rgba(136, 171, 142, 0.45);
 }

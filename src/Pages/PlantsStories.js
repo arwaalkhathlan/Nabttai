@@ -16,49 +16,12 @@ function PlantsStories() {
   if (!product) {
     return <div>Story not found</div>;
   }
-  const whiteBoxStyle = {
-    background: '#fff',
-    borderRadius: '49px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.8)',
-    display: 'flex',
-    marginTop: '20px',
-  };
-
-  const whiteBoxStyle2 = {
-    background: '#fff',
-    height: '320px',
-    borderRadius: '50px',
-    boxShadow: '0 4px 8px rgba(0.8, 0, 0, 0.8)',
-    display: 'flex',
-    margin: 'auto 25px',
-    paddingLeft: '15px',
-  };
-
-  const imagePlantStyle = {
-    flex: '1',
-    borderRadius: '49px',
-    overflow: 'hidden',
-  };
-
-  const imagePlantStyle2 = {
-    flex: '1',
-    borderRadius: '49px',
-    overflow: 'hidden',
-    width: '300px',
-  };
-
-  const infoStyle = {
-    flex: '1',
-    padding: '20px',
-  };
-
-
   return (
     <div className="story-section">
       <Header />
       <Container className='py-4'>
-        <div className="story-div" style={whiteBoxStyle}>
-          <div className="info" style={infoStyle}>
+        <div className="story-div">
+          <div className="info">
 
 
             <div className="Storylabel"><h1>{product.storyname}</h1></div>
@@ -68,7 +31,7 @@ function PlantsStories() {
 
             </div>
           </div>
-          <div className="image-plant" style={imagePlantStyle}>
+          <div className="image-plant">
             <img className='image-respon'
               src={product.imageUrl2}
               alt={product.name}
@@ -76,8 +39,8 @@ function PlantsStories() {
           </div>
         </div>
 
-        <div className="story-div" style={whiteBoxStyle2}>
-          <div className="image-plant" style={imagePlantStyle2}>
+        <div className="story-div">
+          <div className="image-plant">
             <img className='image-respon'
               src={product.imageUrl3}
               alt={product.name}
