@@ -101,6 +101,7 @@ nav .new-sign-in:hover {
 /* End Header Style-------------*/
 /* Start Main Hero Style-------------*/
 .main-hero {
+  height: 100dvh;
   background-color: #88ab8e;
 }
 .main-hero .search-div {
@@ -230,3 +231,68 @@ nav .new-sign-in:hover {
   }
 }
 /*End Famous Plants Style*/
+/*Start Products Style*/
+.caption h2 {
+  color: #4B545A;
+}
+
+.caption .descrp {
+  color: #808080;
+  font-size: clamp(15px, 22px, 4vw);
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+}
+
+.card-bottom {
+  gap: 15px;
+}
+
+.card-text {
+  color: #808080;
+  font-size: clamp(12px, 18px, 4vw);
+  font-weight: 500;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.card-bottom .btn-card {
+  color: #ebeff8;
+  border: 1px solid #3f5b4d;
+  background-color: #3f5b4d;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.card-bottom .btn-card:hover {
+  color: #3f5b4d;
+  background-color: #ffffff;
+}
+
+.card-bottom .like-icon {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #ebeff8;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*End Products Style*/
+/*Start About Style*/
+.about-section img {
+  width: clamp(150px, 250px, 4vw);
+}
+
+.about-section p.paragraph {
+  color: #3f5b4d;
+  font-weight: 700;
+  font-size: clamp(18px, 27px, 4vw);
+  line-height: 50px;
+  margin: 35px 0px;
+}
+
+/*End About Style*/

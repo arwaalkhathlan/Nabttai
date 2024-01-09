@@ -1,5 +1,6 @@
 /* Start Main Hero Style-------------*/
 .main-hero {
+    height: 100dvh;
   background-color: $light-green-color;
   .search-div {
     background-color: $white-color;
@@ -64,8 +65,8 @@
 .swiper {
   padding: 60px 100px !important;
 }
-.famous-plants .caption{
-    color: $title-color;
+.famous-plants .caption {
+  color: $title-color;
 }
 .famous-plants .slid-div {
   border-radius: 25px;
@@ -124,14 +125,65 @@
 }
 
 .famous-plants .slid-div .info a.green-btn {
-    display: block;
-    margin: 10px 100px;
-    padding: 10px;
+  display: block;
+  margin: 10px 100px;
+  padding: 10px;
 }
-@include breakPoint("mobile"){
-    .famous-plants .slid-div .info a.green-btn {
-        margin: 10px;
-    }
+@include breakPoint("mobile") {
+  .famous-plants .slid-div .info a.green-btn {
+    margin: 10px;
+  }
 }
 
 /*End Famous Plants Style*/
+
+/*Start Products Style*/
+.caption h2{
+    color: $title-color;
+}
+.caption .descrp {
+  color: #808080;
+  font-size: clamp(15px, 22px, $font-size-vw);
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+}
+
+.card-bottom {
+  gap: 15px;
+}
+
+.card-text {
+  color: #808080;
+  font-size: clamp(12px, 18px, $font-size-vw);
+  font-weight: 500;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.card-bottom .btn-card {
+  color: $thre-light-brown-color;
+  border: 1px solid $dark-green-color;
+  background-color: $dark-green-color;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.card-bottom .btn-card:hover {
+  color: $dark-green-color;
+  background-color: $white-color;
+}
+
+.card-bottom .like-icon {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: $thre-light-brown-color;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*End Products Style*/

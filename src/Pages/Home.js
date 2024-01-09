@@ -1,6 +1,4 @@
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
 import searchIcon from '../images/search 1.svg';
 import Footer from '../components/Footer';
 import UserReviewPage from "../components/UserReviewPage";
@@ -20,7 +18,7 @@ function Home() {
                         <input type="search" placeholder="البحث" />
                         <img className="search-icon" src={searchIcon} alt="search-icon" />
                     </div>
-                    <div className="text-hero">
+                    <div className="text-hero mt-5">
                         <div className="title my-3">
                             <h1>مرحباً بك في </h1>
                             <span>نبتتي</span>
