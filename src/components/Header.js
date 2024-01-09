@@ -11,7 +11,7 @@ function Header() {
                 <Link className='navbar-brand' to="/"><img className='icon-brand' src={svgl} alt='Logo' /></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-4">
                         <Link className='nav-link' to={`/`}>الرئيسية</Link>
                         <Link className='nav-link' to={`/OurProducts`}>منتجاتنا</Link>
                         <Link className='nav-link' to={`/AboutUs`}>عن نبتتي</Link>

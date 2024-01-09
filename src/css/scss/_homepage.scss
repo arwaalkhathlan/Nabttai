@@ -1,0 +1,74 @@
+/* Start Main Hero Style-------------*/
+.main-hero {
+  background-color: $light-green-color;
+  .search-div {
+    background-color: $white-color;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 59px 12px 19px;
+    width: min(600px, 100%);
+
+    input[type="search"] {
+      flex-grow: 1;
+      background: none;
+      outline: none;
+      border: none;
+
+      &::placeholder {
+        font-weight: 500px;
+        font-size: 20px;
+      }
+    }
+
+    .search-icon {
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      background-color: $light-brown-color;
+      cursor: pointer;
+      border-radius: 32px;
+      box-shadow: -5px -5px 10px 0px #fff,
+        5px 5px 10px 0px rgba(170, 170, 204, 0.5);
+    }
+  }
+}
+.text-hero {
+  .title {
+    display: inline-flex;
+    align-items: flex-end;
+    text-align: center;
+
+    h1 {
+      font-weight: 700;
+      font-size: clamp(25px, 50px, 4vw);
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    img {
+      width: 157px;
+      height: 149px;
+    }
+  }
+
+  p {
+    font-size: clamp(20px, 50px, $font-size-vw);
+    font-weight: 600;
+    color: $white-color;
+    & > span {
+      color: $dark-green-color;
+    }
+  }
+}
+
+.link-hero {
+  text-decoration: none;
+  font-size: clamp(20px, 25px, $font-size-vw);
+  color: $dark-green-color;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+/* End Main Hero Style-------------*/

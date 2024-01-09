@@ -1,0 +1,26 @@
+// استيراد الخط Tajwal
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+// الاعدادات المهمة للموقع
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+// استدعاء ملفات الستايل
+@import "./vareabls";
+@import "./helpers";
+@import "./header";
+@import "./homepage";

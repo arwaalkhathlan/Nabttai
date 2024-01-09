@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.green-dark-bg {
+  background-color: #3f5b4d;
+}
+
+.green-light-bg {
+  background-color: #88ab8e;
+}
+
+.border-bottom-rad {
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.green-btn {
+  color: #ffffff !important;
+  background-color: #88ab8e !important;
+  border: 1px solid #88ab8e !important;
+}
+.green-btn:hover {
+  color: #88ab8e;
+  background-color: #ffffff;
+}
+
+.icon-brand {
+  width: clamp(100px, 120px, 4vw);
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 16px 0px rgba(136, 171, 142, 0.45);
+}
+
+/* Start Header Style-------------*/
+nav {
+  padding-bottom: 35px;
+}
+@media (min-width: 1200px) {
+  nav .navbar-nav {
+    gap: 45px;
+  }
+}
+nav .nav-link {
+  font-size: clamp(16px, 20px, 4vw);
+  color: #ffffff;
+  font-weight: 800;
+  font-family: inherit;
+}
+@media (max-width: 991px) {
+  nav .sign-div {
+    margin-bottom: 30px;
+  }
+}
+nav .sign-link {
+  font-size: clamp(12px, 20px, 4vw);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+nav .sign-link:hover {
+  background-color: #ffffff;
+  color: #88ab8e;
+}
+
+/* End Header Style-------------*/
+/* Start Main Hero Style-------------*/
+.main-hero {
+  background-color: #88ab8e;
+}
+.main-hero .search-div {
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 59px 12px 19px;
+  width: min(600px, 100%);
+}
+.main-hero .search-div input[type=search] {
+  flex-grow: 1;
+  background: none;
+  outline: none;
+  border: none;
+}
+.main-hero .search-div input[type=search]::placeholder {
+  font-weight: 500px;
+  font-size: 20px;
+}
+.main-hero .search-div .search-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: #eee7da;
+  cursor: pointer;
+  border-radius: 32px;
+  box-shadow: -5px -5px 10px 0px #fff, 5px 5px 10px 0px rgba(170, 170, 204, 0.5);
+}
+
+.text-hero .title {
+  display: inline-flex;
+  align-items: flex-end;
+  text-align: center;
+}
+.text-hero .title h1 {
+  font-weight: 700;
+  font-size: clamp(25px, 50px, 4vw);
+  color: #fff;
+  margin-bottom: 18px;
+}
+.text-hero .title img {
+  width: 157px;
+  height: 149px;
+}
+.text-hero p {
+  font-size: clamp(20px, 50px, 4vw);
+  font-weight: 600;
+  color: #ffffff;
+}
+.text-hero p > span {
+  color: #3f5b4d;
+}
+
+.link-hero {
+  text-decoration: none;
+  font-size: clamp(20px, 25px, 4vw);
+  color: #3f5b4d;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+/* End Main Hero Style-------------*/

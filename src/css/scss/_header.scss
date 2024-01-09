@@ -1,0 +1,31 @@
+/* Start Header Style-------------*/
+nav {
+  padding-bottom: 35px;
+  @include breakPoint("large") {
+    .navbar-nav {
+      gap: 45px;
+    }
+  }
+  .nav-link {
+    font-size: clamp(16px, 20px, $font-size-vw);
+    color: $white-color;
+    font-weight: 800;
+    font-family: inherit;
+  }
+  @include breakPoint("medium") {
+    .sign-div {
+      margin-bottom: 30px;
+    }
+  }
+  .sign-link {
+    font-size: clamp(12px, 20px, $font-size-vw);
+    border: 2px solid $white-color;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $white-color;
+      color: $light-green-color;
+    }
+  }
+}
+/* End Header Style-------------*/

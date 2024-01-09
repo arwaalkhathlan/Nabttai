@@ -1,0 +1,32 @@
+// Vars & Mixin & Func
+$dark-green-color: #3f5b4d;
+$light-green-color: #88ab8e;
+$light-brown-color: #eee7da;
+$sec-light-brown-color: #f2f1eb;
+$thre-light-brown-color: #ebeff8;
+$white-color: #ffffff;
+$font-size-vw: 4vw;
+$slid-radius: 60px;
+// دالة  الميديا لضبط العناصر في الشاشات الصغرى
+@mixin breakPoint($point) {
+  @if $point == "mobile" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $point == "small" {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $point == "medium" {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $point == "large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
