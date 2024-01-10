@@ -10,7 +10,7 @@ const UserReviewCard = ({ userProfilePicture, reviewText, userName, starRating }
 
     <Container className='box-shadow' style={{borderRadius: '16px' }} >
 
-    <Card style={{ maxWidth: '450px',height:'300px', margin: '5px', border: 'none',padding:'10px'}}>
+    <Card style={{ maxWidth: '450px',height:'400px', margin: '5px', border: 'none',padding:'10px'}}>
       <Card.Body>
 
       
@@ -32,7 +32,7 @@ const UserReviewCard = ({ userProfilePicture, reviewText, userName, starRating }
         <br />
 
 
-        <Card.Text>{reviewText}</Card.Text>
+        <Card.Text style={{marginBottom:'20px'}}>{reviewText}</Card.Text>
         <Row>
           <Col xs={9}>
             <div style={{ marginBottom: '10px' }}>
@@ -48,6 +48,7 @@ const UserReviewCard = ({ userProfilePicture, reviewText, userName, starRating }
               >
                 <path d="M16.5754 19.6942C14.6728 20.9467 12.4146 21.5466 10.1413 21.4033C7.86797 21.26 5.70291 20.3814 3.97269 18.8999C2.24246 17.4184 1.0409 15.4145 0.54926 13.1904C0.057621 10.9663 0.302566 8.64259 1.24715 6.56986C2.19173 4.49714 3.78471 2.78779 5.78581 1.69965C7.7869 0.611519 10.0876 0.203621 12.3408 0.537488C14.594 0.871355 16.6775 1.92888 18.2771 3.55054C19.8767 5.1722 20.9055 7.27004 21.2085 9.52761C22.1666 14.2316 22.5394 19.8885 20.6651 25.0099C18.6544 30.4961 14.1971 34.9954 6.21449 37.0849C5.54928 37.2377 4.85069 37.1255 4.26686 36.7719C3.68303 36.4183 3.25987 35.8513 3.08711 35.191C2.91435 34.5306 3.00558 33.829 3.34144 33.2348C3.67731 32.6406 4.23141 32.2006 4.88624 32.0081C11.3437 30.3176 14.3625 26.9419 15.7354 23.2039C16.1422 22.0882 16.4179 20.9096 16.5754 19.6916" fill="#3F5B4D" />
               </svg>
+              
               <h5 style={{ paddingTop: '30px' }}>{userName}</h5>
               {Array.from({ length: starRating }).map((_, index) => (
                 <svg key={index} xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none" style={{ marginRight: '2px' }}>
