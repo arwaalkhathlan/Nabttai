@@ -7,7 +7,7 @@ import products from '../data/ProductsData';
 
 import Header from "../components/Header";
 import Footer from '../components/Footer';
-import UserReviewPage from "../components/UserReviewPage";
+// import UserReviewPage from "../components/UserReviewPage";
 import ProductCard from "../components/Product_card";
 
 import ProductCare from '../components/Productscare';
@@ -32,11 +32,16 @@ function ProductsPage() {
           imageUrl={product.imageUrl}
           name={product.name}
           description={product.description}
+          price={product.price}
         />
 
-<div>
-                <ProductCare />
-              </div>
+           <div>
+              <ProductCare 
+               light={product.light}
+                watering={product.watering}
+                temp={product.temp}
+                />
+            </div>
 
         
       </Container>

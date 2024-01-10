@@ -340,3 +340,80 @@
     background-size: cover;
   }
   /* End Story Style*/
+
+  /* product care style */
+  .Care_label{
+    color: #3F5B4D;
+    text-align: right;
+    font-family: Tajawal;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Care_sub-label{
+    color: #464646;
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Tajawal;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .care-image{
+    margin-left: 10px;
+  }
+
+
+
+  .Heart_icon{
+    fill: #4B545A;
+    stroke-width: 1px;
+    stroke: #4B545A;
+  }
+
+  .price{
+    display: flex;
+    margin-left: auto;
+  }
+
+  .price_num{
+    color: #3F5B4D;
+    font-family: Tajawal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+  }
+
+  .price_lbl{
+    color: #3F5B4D;
+    font-family: Tajawal;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    text-align: right;
+  }
+
+
+  /* end of product care */
+
+  /* Start of quantity selector Style*/
+
+
+.custom-dropdown-button {
+  background-color: transparent;
+  color: #4B545A;
+}
+
+
+  /* end of quantity selector */
