@@ -54,10 +54,8 @@ a {
 nav {
   padding-bottom: 35px;
 }
-@media (max-width: 1200px) {
-  nav .navbar-nav {
-    gap: 45px;
-  }
+nav .navbar-nav {
+  gap: 45px;
 }
 nav .nav-link {
   font-size: clamp(16px, 20px, 4vw);
@@ -97,6 +95,11 @@ nav .new-sign-in:hover {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 10px;
+  }
+}
 /* End Header Style-------------*/
 /* Start Main Hero Style-------------*/
 .main-hero {
@@ -419,7 +422,6 @@ nav .new-sign-in:hover {
 
 /* end of product care */
 /* end of quantity selector */
-/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
 .Button {
   margin-top: 10px;
 }
@@ -458,6 +460,12 @@ nav .new-sign-in:hover {
   gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .care-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .care-image {
   width: 100px;
   height: auto;
