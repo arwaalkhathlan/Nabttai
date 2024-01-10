@@ -139,7 +139,7 @@
 
 /*Start Products Style*/
 .caption .descrp {
-  color: #808080;
+  color: $text-color;
   font-size: clamp(15px, 22px, $font-size-vw);
   font-weight: 500;
   line-height: 16px;

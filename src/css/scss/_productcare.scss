@@ -1,0 +1,133 @@
+
+
+
+  /* product care style */
+  .Care_label{
+    color: $dark-green-color;
+    text-align: right;
+    font-size: clamp(20px, 25px, $font-size-vw);
+    font-weight: 700;
+    line-height: 32px; 
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+.plant-info-list{
+    padding: 5px;
+  border-radius: $box-radius;
+  margin-bottom: 20px;
+}
+  .Care_sub-label{
+    color: #464646;
+    text-align: right;
+    font-size: clamp(17px, 22px, $font-size-vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+
+
+  .Heart_icon{
+    fill: $title-color;
+    stroke-width: 1px;
+    stroke: $title-color;
+  }
+
+  .price{
+    display: flex;
+    margin-left: auto;
+  }
+
+
+  /* end of product care */
+
+
+
+
+  /* end of quantity selector */
+  /* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
+
+  
+  .Button {
+    margin-top: 10px;
+  }
+
+  .star-col {
+    margin-right: -115px; 
+  }
+  
+  .Product_label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    margin-left: auto;
+    
+  }
+
+  .Product_Button {
+    display: flex;
+    max-width: 700px;
+    
+  }
+
+  /* products.css */
+.product_body-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Product_care {
+  margin-top: 20px;
+}
+
+.care-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.care-image {
+  width: 100px; 
+  height: auto;
+  margin: 0px 20px;
+}
+
+.care-content {
+    width: 100%;
+
+ ul{
+    color: $text-color;
+ }
+
+}
+
+
+/* reviews style */
+.review_title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.review-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-respon{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1021px) {
+  .image-respon{
+    display: none;
+  }
+}
+
+

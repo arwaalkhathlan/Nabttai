@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Row, Col, Container } from 'react-bootstrap';
-import '../css/index.css';
 
 import Heart from '../images/Heart.png';
 import QuantitySelector from './QuantitySelector';
@@ -65,7 +64,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
                   اضف إلى السلة
                 </button>
 
-                <QuantitySelector/>
+                <QuantitySelector />
 
               </div>
             </Container>

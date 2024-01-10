@@ -7,7 +7,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import plant_info from '../images/plant_info.png';
 
-import '../css/products.css';
 
 function PlantsStories() {
   const { ProductId } = useParams();
@@ -44,9 +43,7 @@ function PlantsStories() {
               alt={product.name}
             />
           </div>
-          <Link to={`/OurProducts`} className="button_box2">
-            لإضافة فيّ للسلة
-          </Link>
+          <Link to={`/ProdcutPage/${product.id}`} className="button_box2">{`إضافة ${product.name} للسلة`}</Link>
         </div>
       </Container>
       <Footer />

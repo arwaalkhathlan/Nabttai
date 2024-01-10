@@ -14,10 +14,6 @@ body {
 a {
   text-decoration: none;
 }
-ul,
-li {
-  list-style-type: none;
-}
 
 // استدعاء ملفات الستايل
 @import "./vareabls";
@@ -26,3 +22,4 @@ li {
 @import "./homepage";
 @import "./aboutpage";
 @import "./storyplant";
+@import "./productcare";
