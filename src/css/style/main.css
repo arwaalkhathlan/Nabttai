@@ -170,11 +170,14 @@ nav .new-sign-in:hover {
   direction: ltr;
   margin: auto;
   padding: 30px;
+  min-height: 400px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   .famous-plants .slid-div {
     padding: 10px;
+    min-height: 650px;
   }
 }
 /* Responsev Style Swiper */

@@ -70,10 +70,13 @@
   direction: ltr;
   margin: auto;
   padding: 30px;
+  min-height: 400px;
+  align-items: center;
 }
 @include breakPoint("mobile") {
   .famous-plants .slid-div {
     padding: 10px;
+    min-height: 650px;
   }
 }
 
