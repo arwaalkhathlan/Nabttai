@@ -27,7 +27,6 @@ function ProductsPage() {
       <Header />
       <Container>
 
-        
         <ProductCard
           imageUrl={product.imageUrl}
           name={product.name}
@@ -43,7 +42,6 @@ function ProductsPage() {
                 />
             </div>
 
-        
       </Container>
       <Footer />
     </>
