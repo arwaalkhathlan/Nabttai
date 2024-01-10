@@ -10,7 +10,7 @@ function Prodcuts() {
             <Row>
                 <Col sm={12} md={6} lg={4}>
                     <Card className="border-0">
-                        <Card.Img className="rounded-0" variant="top" src={sabara} />
+                        <Card.Img className="rounded-4" variant="top" src={sabara} />
                         <Card.Body className="px-0 py-3">
                             <div className="d-flex fw-bold justify-content-between">
                                 <Card.Title>صبرا</Card.Title>
@@ -28,7 +28,7 @@ function Prodcuts() {
                 </Col>
                 <Col sm={12} md={6} lg={4}>
                     <Card className="border-0">
-                        <Card.Img className="rounded-0" variant="top" src={Fee} />
+                        <Card.Img className="rounded-4" variant="top" src={Fee} />
                         <Card.Body className="px-0 py-3">
                             <div className="d-flex fw-bold justify-content-between">
                                 <Card.Title>فيّ</Card.Title>
@@ -46,7 +46,7 @@ function Prodcuts() {
                 </Col>
                 <Col sm={12} md={6} lg={4}>
                     <Card className="border-0">
-                        <Card.Img className="rounded-0" variant="top" src={Nassem} />
+                        <Card.Img className="rounded-4" variant="top" src={Nassem} />
                         <Card.Body className="px-0 py-3">
                             <div className="d-flex fw-bold justify-content-between">
                                 <Card.Title>نسيم</Card.Title>

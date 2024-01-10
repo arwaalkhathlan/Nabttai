@@ -19,12 +19,28 @@ nav {
   }
   .sign-link {
     font-size: clamp(12px, 20px, $font-size-vw);
-    border: 2px solid $white-color;
     border-radius: 10px;
     transition: all 0.3s ease;
-    &:hover {
-      background-color: $white-color;
-      color: $light-green-color;
+    text-decoration: none;
+    color: $white-color;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 2px solid;
+  }
+  .sign-in{
+    background-color: $dark-green-color;
+    border-color: transparent;
+    &:hover{
+      background-color: transparent;
+      border: 2px solid $dark-green-color;
+    }
+  }
+  .new-sign-in{
+    border: 2px solid $dark-green-color;
+    color: $dark-green-color;
+    &:hover{
+      background-color: $dark-green-color;
+      color: $white-color;
     }
   }
 }

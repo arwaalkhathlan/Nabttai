@@ -47,6 +47,10 @@ li {
   width: clamp(100px, 120px, 4vw);
 }
 
+.text-title {
+  color: #4B545A;
+}
+
 .box-shadow {
   box-shadow: 0px 0px 16px 0px rgba(136, 171, 142, 0.45);
 }
@@ -55,7 +59,7 @@ li {
 nav {
   padding-bottom: 35px;
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   nav .navbar-nav {
     gap: 45px;
   }
@@ -73,18 +77,35 @@ nav .nav-link {
 }
 nav .sign-link {
   font-size: clamp(12px, 20px, 4vw);
-  border: 2px solid #ffffff;
   border-radius: 10px;
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 2px solid;
 }
-nav .sign-link:hover {
-  background-color: #ffffff;
-  color: #88ab8e;
+nav .sign-in {
+  background-color: #3f5b4d;
+  border-color: transparent;
+}
+nav .sign-in:hover {
+  background-color: transparent;
+  border: 2px solid #3f5b4d;
+}
+nav .new-sign-in {
+  border: 2px solid #3f5b4d;
+  color: #3f5b4d;
+}
+nav .new-sign-in:hover {
+  background-color: #3f5b4d;
+  color: #ffffff;
 }
 
 /* End Header Style-------------*/
 /* Start Main Hero Style-------------*/
 .main-hero {
+  height: 100dvh;
   background-color: #88ab8e;
 }
 .main-hero .search-div {
@@ -93,7 +114,7 @@ nav .sign-link:hover {
   border-radius: 20px;
   display: inline-flex;
   align-items: center;
-  padding: 12px 59px 12px 19px;
+  padding: 16px;
   width: min(600px, 100%);
 }
 .main-hero .search-div input[type=search] {
@@ -110,7 +131,6 @@ nav .sign-link:hover {
   width: 40px;
   height: 40px;
   padding: 8px;
-  background-color: #eee7da;
   cursor: pointer;
   border-radius: 32px;
   box-shadow: -5px -5px 10px 0px #fff, 5px 5px 10px 0px rgba(170, 170, 204, 0.5);
@@ -120,16 +140,15 @@ nav .sign-link:hover {
   display: inline-flex;
   align-items: flex-end;
   text-align: center;
-}
-.text-hero .title h1 {
-  font-weight: 700;
-  font-size: clamp(25px, 50px, 4vw);
-  color: #fff;
   margin-bottom: 18px;
 }
-.text-hero .title img {
-  width: 157px;
-  height: 149px;
+.text-hero .title h1, .text-hero .title > span {
+  font-weight: 700;
+  font-size: clamp(25px, 50px, 4vw);
+  color: #ffffff;
+}
+.text-hero .title span {
+  color: #3f5b4d;
 }
 .text-hero p {
   font-size: clamp(20px, 50px, 4vw);
@@ -140,14 +159,224 @@ nav .sign-link:hover {
   color: #3f5b4d;
 }
 
-.link-hero {
-  text-decoration: none;
-  font-size: clamp(20px, 25px, 4vw);
-  color: #3f5b4d;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: 700;
+/* End Main Hero Style-------------*/
+/*Start Famous Plants Style*/
+.swiper {
+  padding: 60px 100px !important;
 }
 
-/* End Main Hero Style-------------*/
+.famous-plants .slid-div {
+  border-radius: 25px;
+  direction: ltr;
+  margin: auto;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .famous-plants .slid-div {
+    padding: 10px;
+  }
+}
+/* Responsev Style Swiper */
+@media (max-width: 768px) {
+  .swiper {
+    padding: 30px !important;
+  }
+  .famous-plants .slid-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.famous-plants .slid-div .image-plant {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.famous-plants .slid-div .image-plant img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.famous-plants .slid-div .info {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+
+.famous-plants .slid-div .info h5 {
+  color: #3f5b4d;
+  font-size: clamp(20px, 50px, 4vw);
+  font-weight: 800;
+  line-height: normal;
+}
+
+.famous-plants .slid-div .info p {
+  color: #3f5b4d;
+  font-size: clamp(14px, 16px, 4vw);
+  font-weight: 900;
+  padding: 10px;
+}
+
+.famous-plants .slid-div .info a.green-btn {
+  display: block;
+  margin: 10px 100px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .famous-plants .slid-div .info a.green-btn {
+    margin: 10px;
+  }
+}
+/*End Famous Plants Style*/
+/*Start Products Style*/
+.caption .descrp {
+  color: #808080;
+  font-size: clamp(15px, 22px, 4vw);
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+}
+
+.card-bottom {
+  gap: 15px;
+}
+
+.card-text {
+  color: #808080;
+  font-size: clamp(12px, 18px, 4vw);
+  font-weight: 500;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.card-bottom .btn-card {
+  color: #ebeff8;
+  border: 1px solid #3f5b4d;
+  background-color: #3f5b4d;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.card-bottom .btn-card:hover {
+  color: #3f5b4d;
+  background-color: #ffffff;
+}
+
+.card-bottom .like-icon {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #ebeff8;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*End Products Style*/
+/*Start About Style*/
+.about-section img {
+  width: clamp(150px, 250px, 4vw);
+}
+
+.about-section p.paragraph {
+  color: #3f5b4d;
+  font-weight: 700;
+  font-size: clamp(18px, 27px, 4vw);
+  line-height: 50px;
+  margin: 35px 0px;
+}
+
+/*End About Style*/
+/*Start Story Style*/
+.story-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.story-div .image-plant {
+  min-width: 550px;
+  border-radius: 16px;
+}
+.story-div .image-plant img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  .story-div .image-plant {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .story-div .image-plant {
+    min-width: 350px;
+  }
+}
+.story-div .storylabel h1 {
+  color: #3f5b4d;
+  text-align: start;
+  font-size: clamp(20px, 30px, 4vw);
+  font-weight: bold;
+}
+.story-div .storyText {
+  color: #3f5b4d;
+  text-align: justify;
+  font-size: clamp(17px, 25px, 4vw);
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (max-width: 1200px) {
+  .story-div {
+    flex-direction: column;
+  }
+}
+.needs {
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.box2_text {
+  color: #3f5b4d;
+  padding: 15px;
+  text-align: center;
+  font-size: clamp(17px, 25px, 4vw);
+  font-weight: 800;
+  line-height: normal;
+  border-left: 1px solid #3f5b4d;
+}
+
+.plant_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button_box2 {
+  border-radius: 16px;
+  background-color: #3f5b4d;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: clamp(20px, 25px, 4vw);
+  font-weight: 800;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .needs {
+    flex-wrap: wrap;
+  }
+  .box2_text {
+    border-left: none;
+  }
+}
+/* End Story Style*/

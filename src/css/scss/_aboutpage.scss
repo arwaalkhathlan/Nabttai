@@ -1,0 +1,13 @@
+/*Start About Style*/
+.about-section img{
+    width: clamp(150px, 250px, $font-size-vw);
+}
+.about-section p.paragraph {
+  color: $dark-green-color;
+  font-weight: 700;
+  font-size: clamp(18px, 27px, $font-size-vw);
+  line-height: 50px;
+  margin: 35px 0px;
+}
+
+/*End About Style*/
