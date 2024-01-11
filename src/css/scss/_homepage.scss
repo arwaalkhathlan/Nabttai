@@ -1,6 +1,6 @@
 /* Start Main Hero Style-------------*/
 .main-hero {
-    height: 100dvh;
+  height: 100dvh;
   background-color: $light-green-color;
   .search-div {
     background-color: $white-color;
@@ -64,6 +64,9 @@
 /*Start Famous Plants Style*/
 .swiper {
   padding: 60px 100px !important;
+  .swiper-slide{
+    background-color: $white-color;
+  }
 }
 .famous-plants .slid-div {
   border-radius: 25px;

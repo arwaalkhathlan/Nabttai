@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import svgl from '../images/logo.svg';
-import salla from '../images/sallaIcon.svg';
+import salla from '../images/salla.png';
 function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" className="green-light-bg border-bottom-rad">
@@ -15,7 +15,7 @@ function Header() {
                         <Link className='nav-link' to={`/`}>الرئيسية</Link>
                         <Link className='nav-link' to={`/OurProducts`}>منتجاتنا</Link>
                         <Link className='nav-link' to={`/AboutUs`}>عن نبتتي</Link>
-                        <Link className='nav-link' to={`/`}><img src={salla} alt='salla-icon' /> السلة</Link>
+                        <Link className='nav-link' to={`/`}><img src={salla} alt='salla-icon' /></Link>
                     </Nav>
                     <Nav className='sign-div gap-2'>
                         <Link className='sign-link sign-in'>تسجيل دخول</Link>

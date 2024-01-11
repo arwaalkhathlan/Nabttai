@@ -9,6 +9,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #FBFBFB !important;
 }
 
 a {
@@ -59,7 +60,7 @@ nav .navbar-nav {
 }
 nav .nav-link {
   font-size: clamp(16px, 20px, 4vw);
-  color: #ffffff;
+  color: #F5F5F5;
   font-weight: 800;
   font-family: inherit;
 }
@@ -162,6 +163,9 @@ nav .new-sign-in:hover {
 /*Start Famous Plants Style*/
 .swiper {
   padding: 60px 100px !important;
+}
+.swiper .swiper-slide {
+  background-color: #ffffff;
 }
 
 .famous-plants .slid-div {
