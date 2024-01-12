@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+.Button {
+  margin-top: 10px;
+}
+
+.star-col {
+  margin-right: -115px;
+}
+
+.Product_label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  margin-left: auto;
+}
+
+.Product_Button {
+  display: flex;
+  max-width: 700px;
+}
+
+
+.product_body-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Product_care {
+  margin-top: 20px;
+}
+
+.care-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .care-image {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .care-content {
+    width: 100%;
+  }
+}
+
+
+.review_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-respon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (max-width: 1021px) {
+    display: none;
+  }
+}

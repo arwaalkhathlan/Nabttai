@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import plant_info from '../images/plant_info.png';
 
 import '../css/products.css';
+import '../css/scss/_plantsstories.scss';
 
 function PlantsStories() {
   const { ProductId } = useParams();

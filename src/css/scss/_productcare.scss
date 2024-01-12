@@ -1,0 +1,36 @@
+
+.Care_label {
+    color: #3F5B4D;
+    text-align: right;
+    font-family: Tajawal;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  
+    &.sub-label {
+      color: #464646;
+      text-align: right;
+      font-weight: 500;
+    }
+  
+    &-image {
+      margin-left: 10px;
+    }
+  }
+  
+  .Heart_icon {
+    fill: #4B545A;
+    stroke-width: 1px;
+    stroke: #4B545A;
+  }
+  
+  .price {
+    display: flex;
+    margin-left: auto;
+  }
+
+  

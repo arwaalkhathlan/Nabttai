@@ -3,8 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import plant_sun from '../images/plant_sun.png'; 
 import plant_water from '../images/plant_water.png';
 import plant_temp from '../images/plant_temp.png';
-import '../css/style/main.css';
-import '../css/index.css';
+
+import '../css/scss/_productcare.scss';
 
 const ProductCare = ({light, watering, temp}) => {
   return (
