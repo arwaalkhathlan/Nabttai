@@ -10,13 +10,10 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #FBFBFB !important;
 }
 a {
   text-decoration: none;
-}
-ul,
-li {
-  list-style-type: none;
 }
 
 // استدعاء ملفات الستايل
@@ -26,3 +23,5 @@ li {
 @import "./homepage";
 @import "./aboutpage";
 @import "./storyplant";
+@import "./productcare";
+@import "./Footer";

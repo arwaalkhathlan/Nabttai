@@ -64,7 +64,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
                   اضف إلى السلة
                 </button>
 
-                <QuantitySelector/>
+                <QuantitySelector />
 
               </div>
             </Container>

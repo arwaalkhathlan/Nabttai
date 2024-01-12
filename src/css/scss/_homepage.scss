@@ -1,6 +1,6 @@
 /* Start Main Hero Style-------------*/
 .main-hero {
-    height: 100dvh;
+  height: 100dvh;
   background-color: $light-green-color;
   .search-div {
     background-color: $white-color;
@@ -10,7 +10,7 @@
     align-items: center;
     padding: 16px;
     width: min(600px, 100%);
-
+    margin-top: 70px;
     input[type="search"] {
       flex-grow: 1;
       background: none;
@@ -64,16 +64,22 @@
 /*Start Famous Plants Style*/
 .swiper {
   padding: 60px 100px !important;
+  .swiper-slide{
+    background-color: $white-color;
+  }
 }
 .famous-plants .slid-div {
   border-radius: 25px;
   direction: ltr;
   margin: auto;
   padding: 30px;
+  min-height: 400px;
+  align-items: center;
 }
 @include breakPoint("mobile") {
   .famous-plants .slid-div {
     padding: 10px;
+    min-height: 650px;
   }
 }
 
@@ -136,7 +142,7 @@
 
 /*Start Products Style*/
 .caption .descrp {
-  color: #808080;
+  color: $text-color;
   font-size: clamp(15px, 22px, $font-size-vw);
   font-weight: 500;
   line-height: 16px;

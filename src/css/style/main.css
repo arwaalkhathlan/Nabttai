@@ -9,15 +9,11 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #FBFBFB !important;
 }
 
 a {
   text-decoration: none;
-}
-
-ul,
-li {
-  list-style-type: none;
 }
 
 .green-dark-bg {
@@ -59,14 +55,12 @@ li {
 nav {
   padding-bottom: 35px;
 }
-@media (max-width: 1200px) {
-  nav .navbar-nav {
-    gap: 45px;
-  }
+nav .navbar-nav {
+  gap: 45px;
 }
 nav .nav-link {
   font-size: clamp(16px, 20px, 4vw);
-  color: #ffffff;
+  color: #F5F5F5;
   font-weight: 800;
   font-family: inherit;
 }
@@ -102,6 +96,11 @@ nav .new-sign-in:hover {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 10px;
+  }
+}
 /* End Header Style-------------*/
 /* Start Main Hero Style-------------*/
 .main-hero {
@@ -116,6 +115,7 @@ nav .new-sign-in:hover {
   align-items: center;
   padding: 16px;
   width: min(600px, 100%);
+  margin-top: 70px;
 }
 .main-hero .search-div input[type=search] {
   flex-grow: 1;
@@ -164,17 +164,23 @@ nav .new-sign-in:hover {
 .swiper {
   padding: 60px 100px !important;
 }
+.swiper .swiper-slide {
+  background-color: #ffffff;
+}
 
 .famous-plants .slid-div {
   border-radius: 25px;
   direction: ltr;
   margin: auto;
   padding: 30px;
+  min-height: 400px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   .famous-plants .slid-div {
     padding: 10px;
+    min-height: 650px;
   }
 }
 /* Responsev Style Swiper */
@@ -380,3 +386,125 @@ nav .new-sign-in:hover {
   }
 }
 /* End Story Style*/
+/* product care style */
+.Care_label {
+  color: #3f5b4d;
+  text-align: right;
+  font-size: clamp(20px, 25px, 4vw);
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.plant-info-list {
+  padding: 5px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.Care_sub-label {
+  color: #464646;
+  text-align: right;
+  font-size: clamp(17px, 22px, 4vw);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.Heart_icon {
+  fill: #4B545A;
+  stroke-width: 1px;
+  stroke: #4B545A;
+}
+
+.price {
+  display: flex;
+  margin-left: auto;
+}
+
+/* end of product care */
+/* end of quantity selector */
+.Button {
+  margin-top: 10px;
+}
+
+.star-col {
+  margin-right: -115px;
+}
+
+.Product_label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  margin-left: auto;
+}
+
+.Product_Button {
+  display: flex;
+  max-width: 700px;
+}
+
+/* products.css */
+.product_body-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Product_care {
+  margin-top: 20px;
+}
+
+.care-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .care-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.care-image {
+  width: 100px;
+  height: auto;
+  margin: 0px 20px;
+}
+
+.care-content {
+  width: 100%;
+}
+.care-content ul {
+  color: #808080;
+}
+
+/* reviews style */
+.review_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-respon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1021px) {
+  .image-respon {
+    display: none;
+  }
+}

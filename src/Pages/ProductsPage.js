@@ -16,7 +16,6 @@ import ProductCare from '../components/Productscare';
 function ProductsPage() {
   const { ProductId } = useParams();
   const product = products.find((product) => product.id === ProductId);
-
   if (!product) {
     
     return <div>Product not found</div>;
