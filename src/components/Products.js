@@ -13,7 +13,7 @@ function Prodcuts() {
                         <Link to={`/ProdcutPage/1`} className="text-decoration-none">
                             <Card.Img className="rounded-3" variant="top" src={sabara} />
                         </Link>
-                        <Card.Body className="px-0 py-3">
+                        <Card.Body className="px-0 d-flex flex-column justify-content-between py-3">
                             <div className="d-flex fw-bold justify-content-between">
                                 <Card.Title>صبرا</Card.Title>
                                 <span>50 ريال</span>
@@ -33,7 +33,7 @@ function Prodcuts() {
                         <Link to={`/ProdcutPage/2`} className="text-decoration-none">
                             <Card.Img className="rounded-3" variant="top" src={Fee} />
                         </Link>
-                        <Card.Body className="px-0 py-3">
+                        <Card.Body className="px-0 d-flex flex-column justify-content-between py-3">
                             <div className="d-flex fw-bold justify-content-between">
                                 <Card.Title>فيّ</Card.Title>
                                 <span>150 ريال</span>
@@ -53,7 +53,7 @@ function Prodcuts() {
                         <Link to={`/ProdcutPage/3`} className="text-decoration-none">
                             <Card.Img className="rounded-3" variant="top" src={Nassem} />
                         </Link>
-                            <Card.Body className="px-0 py-3">
+                            <Card.Body className="px-0 d-flex flex-column justify-content-between py-3">
                                 <div className="d-flex fw-bold justify-content-between">
                                     <Card.Title>نسيم</Card.Title>
                                     <span>250 ريال</span>
