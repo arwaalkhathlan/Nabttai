@@ -11,6 +11,7 @@ $f5f5-color: #F5F5F5;
 $font-size-vw: 4vw;
 $slid-radius: 60px;
 $box-radius: 16px;
+$iconSize: 130px;
 // دالة  الميديا لضبط العناصر في الشاشات الصغرى
 @mixin breakPoint($point) {
   @if $point == "mobile" {
