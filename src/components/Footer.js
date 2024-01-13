@@ -26,8 +26,8 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="d-flex align-items-center">
-          <Col md={2}>
-            <img src={logo} alt="Logo" className="icon" />
+          <Col md={2} >
+            <img src={logo} alt="Logo" className="icon" style={{width: `${iconSize}px`, height: `${iconSize}px` }}/>
           </Col>
 
           <Col md={3} className="mb-3">
@@ -39,7 +39,7 @@ const Footer = () => {
           </Col>
 
           <Col md={3} className="mb-3">
-            <h5 style={{ color: '#3F5B4D', fontWeight: '700' }}>مجتمع نبتتي</h5>
+            <h5  style={{ color: '#3F5B4D', fontWeight: '700' }}>مجتمع نبتتي</h5>
             <ul className="list-unstyled">
               <li><a href="/" className="link">اهداء الى صديق</a></li>
               <li><a href="/" className="link">ارسل هدايا</a></li>
