@@ -43,7 +43,7 @@ function PlantsStories() {
               alt={product.name}
             />
           </div>
-          <Link to={`/ProdcutPage/${product.id}`} className="button_box2">{`إضافة ${product.name} للسلة`}</Link>
+          <Link to={`/ProdcutPage/${product.id}`} className="button_box2">{`أنا مهتم بـ ${product.name} `}</Link>
         </div>
       </Container>
       <Footer />
