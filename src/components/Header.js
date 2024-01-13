@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import svgl from '../images/logo.svg';
-import salla from '../images/salla.png';
+// import salla from '../images/salla.png';
 function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" className="green-light-bg border-bottom-rad">
