@@ -10,8 +10,6 @@ function Home() {
     return (
         <>
             <div className="main-hero border-bottom-rad pb-3">
-                <span className="right-leaf"></span>
-                <span className="left-leaf"></span>
                 <Header />
                 <Container className="text-center position-relative">
                     <div className="search-div">
