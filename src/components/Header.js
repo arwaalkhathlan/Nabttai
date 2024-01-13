@@ -15,13 +15,13 @@ function Header() {
                         <Link className='nav-link' to={`/`}>الرئيسية</Link>
                         <Link className='nav-link' to={`/OurProducts`}>منتجاتنا</Link>
                         <Link className='nav-link' to={`/AboutUs`}>عن نبتتي</Link>
-                        <Link className='nav-link' to={`/`}><img src={salla} alt='salla-icon' /></Link>
+                        {/* <Link className='nav-link' to={`/`}><img src={salla} alt='salla-icon' /></Link> */}
                     </Nav>
                     <Nav className='sign-div gap-2'>
-                        <Link className='sign-link sign-in'>تسجيل دخول</Link>
-                        <Link className='sign-link new-sign-in'>
+                        <Link className='sign-link sign-in'>تسجيل </Link>
+                        {/* <Link className='sign-link new-sign-in'>
                             حساب جديد
-                        </Link>
+                        </Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

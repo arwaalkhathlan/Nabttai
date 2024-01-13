@@ -61,7 +61,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
             <Container>
               <div className="card-bottom d-flex">
                 <button className="btn-card flex-fill" variant="primary" >
-                  اضف إلى السلة
+                أنا مهتم بهذا المنتج
                 </button>
 
                 <QuantitySelector />
