@@ -1,11 +1,14 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Breadcrumb } from 'react-bootstrap';
 import { useParams, Link } from 'react-router-dom';
 
 import products from '../data/ProductsData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import plant_info from '../images/plant_info.png';
+import BreadcrumbLink from '../components/BreadcrumbLink';
+
+import '../css/scss/_breadcrumbsLink.scss';
 
 
 function PlantsStories() {
@@ -15,10 +18,21 @@ function PlantsStories() {
   if (!product) {
     return <div>Story not found</div>;
   }
+
+
   return (
     <div className="story-section">
       <Header />
       <Container className='py-4'>
+      <Container >
+        <Breadcrumb className="breadcrumbs">
+          <BreadcrumbLink to="/" label="الــرئـيـسـيـه" className="non-link" />
+          <BreadcrumbLink to={`/products/${ProductId}`} label={product.storyname} active />
+        </Breadcrumb>
+      </Container>
+
+
+
         <div className="story-div">
           <div className="info">
             <div className="storylabel"><h1>{product.storyname}</h1></div>

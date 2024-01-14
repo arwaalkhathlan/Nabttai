@@ -1,0 +1,41 @@
+
+@import 'variables';
+
+
+.breadcrumbs {
+  margin-top: 50px;
+
+  .breadcrumb-item {
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Tajawal, sans-serif';
+    color:  $dark-green-color;
+    font-family: Tajawal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+
+    &:not(:first-child)::before {
+      content: '>';
+      margin: 0 8px;
+    }
+
+    &:hover {
+      text-decoration: underline; 
+    }
+  }
+
+  .breadcrumb-item.active {
+    color: #545454;
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  
+  .non-link {
+    color: $dark-green-color;
+    font-weight: normal;
+    text-decoration: none;
+  }
+}

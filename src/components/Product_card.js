@@ -6,7 +6,7 @@ import QuantitySelector from './QuantitySelector';
 
 const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
   return (
-    <Card style={{ border: 'none', padding: '20px', marginTop: '100px' }}>
+    <Card style={{ border: 'none', padding: '20px', marginTop:'-40px' }}>
       <Row>
         <Col xs={12} md={6}>
           <Card.Img
