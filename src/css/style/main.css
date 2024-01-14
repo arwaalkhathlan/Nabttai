@@ -104,7 +104,7 @@ nav .new-sign-in:hover {
 /* End Header Style-------------*/
 /* Start Main Hero Style-------------*/
 .main-hero {
-  /* height: 100dvh; */
+  height: 100dvh;
   background-color: #88ab8e;
 }
 .main-hero .search-div {
@@ -507,4 +507,74 @@ nav .new-sign-in:hover {
   .image-respon {
     display: none;
   }
+}
+.footer {
+  background-color: #f2f1eb;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 15px;
+}
+.footer .link {
+  color: #3f5b4d;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.footer .subscription-form {
+  margin-top: 10px;
+  color: #3f5b4d;
+  font-weight: 700;
+}
+.footer .subscription-form .form-control {
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+}
+.footer .subscription-form .button {
+  border-radius: 10px;
+  background-color: #3f5b4d;
+  color: #ffffff;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 9px;
+  width: 100px;
+  border: none;
+}
+.footer .icon {
+  width: 130px;
+  height: 130px;
+}
+
+.breadcrumbs {
+  margin-top: 50px;
+}
+.breadcrumbs .breadcrumb-item {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Tajawal, sans-serif";
+  color: #3f5b4d;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+.breadcrumbs .breadcrumb-item:not(:first-child)::before {
+  content: ">";
+  margin: 0 8px;
+}
+.breadcrumbs .breadcrumb-item:hover {
+  text-decoration: underline;
+}
+.breadcrumbs .breadcrumb-item.active {
+  color: #545454;
+  font-family: Tajawal;
+  font-style: normal;
+  font-weight: 700;
+}
+.breadcrumbs .non-link {
+  color: #3f5b4d;
+  font-weight: normal;
+  text-decoration: none;
 }

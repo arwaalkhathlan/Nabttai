@@ -17,7 +17,7 @@ a {
 }
 
 // استدعاء ملفات الستايل
-@import "./vareabls";
+@import "./variables";
 @import "./helpers";
 @import "./header";
 @import "./homepage";
@@ -25,3 +25,4 @@ a {
 @import "./storyplant";
 @import "./productcare";
 @import "./Footer";
+@import './breadcrumbsLink';
