@@ -1,10 +1,9 @@
 // Footer.js
-
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import logo from '../images/greenLogo.svg';
 import '../css/scss/_Footer.scss'; // Import the SCSS file
-
+import { handleShow} from './Product_card';
 const Footer = () => {
   const [iconSize, setIconSize] = useState(130);
 

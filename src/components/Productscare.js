@@ -18,8 +18,8 @@ const ProductCare = ({ light, watering, temp }) => {
                 <label className="Care_sub-label">الإضاءة</label>
                 <ul>
                   {
-                    light.map((e) => {
-                      return <li>{e}</li>
+                    light.map((e, i) => {
+                      return <li key={i}>{e}</li>
                     }
                     )
                   }
@@ -35,8 +35,8 @@ const ProductCare = ({ light, watering, temp }) => {
                 <label className="Care_sub-label">الري</label>
                 <ul>
                   {
-                    watering.map((e) => {
-                      return <li>{e}</li>
+                    watering.map((e, i) => {
+                      return <li key={i}>{e}</li>
                     }
                     )
                   }
@@ -52,8 +52,8 @@ const ProductCare = ({ light, watering, temp }) => {
                 <label className="Care_sub-label">الحرارة</label>
                 <ul>
                   {
-                    temp.map((e) => {
-                      return <li>{e}</li>
+                    temp.map((e, i) => {
+                      return <li key={i}>{e}</li>
                     }
                     )
                   }

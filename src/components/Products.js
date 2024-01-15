@@ -22,7 +22,7 @@ function Prodcuts() {
                                 نبات صبار صغير مزين بزهور وردية اللون في حوض زجاجي يحتوي على رمل و أحجار ملونة.
                             </Card.Text>
                             <div className="card-bottom d-flex">
-                                <Link to={`/ProdcutPage/1`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
+                                <Link to={`/ProdcutPage/1`} className="btn-card flex-fill" variant="primary">المزيد من التفاصيل</Link>
                                 <img className="like-icon" src={like} alt="likeIcon" />
                             </div>
                         </Card.Body>
@@ -42,7 +42,7 @@ function Prodcuts() {
                                 نبتة الألوفيرا حجم صغير في حوض من الفخار
                             </Card.Text>
                             <div className="card-bottom d-flex">
-                                <Link to={`/ProdcutPage/2`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
+                                <Link to={`/ProdcutPage/2`} className="btn-card flex-fill" variant="primary">المزيد من التفاصيل</Link>
                                 <img className="like-icon" src={like} alt="likeIcon" />
                             </div>
                         </Card.Body>
@@ -62,7 +62,7 @@ function Prodcuts() {
                                     نبتة بونساي حجم صغير في حوض حجري
                                 </Card.Text>
                                 <div className="card-bottom d-flex">
-                                    <Link to={`/ProdcutPage/3`} className="btn-card flex-fill" variant="primary">اضف إلى السلة</Link>
+                                    <Link to={`/ProdcutPage/3`} className="btn-card flex-fill" variant="primary">المزيد من التفاصيل</Link>
                                     <img className="like-icon" src={like} alt="likeIcon" />
                                 </div>
                             </Card.Body>
