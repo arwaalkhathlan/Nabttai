@@ -27,7 +27,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
       message: messageForm
     }
 
-    if (nameForm === '' && emailForm === '' && messageForm === '') {
+    if (nameForm === '' || emailForm === '' || messageForm === '') {
       setStateMessage('من فضلك املئ الحقول');
       setShowAlert(true);
     } else {
