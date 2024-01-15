@@ -17,7 +17,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
   const [nameForm, setNameForm] = useState('');
   const [emailForm, setEmailForm] = useState('');
   const [messageForm, setMessageForm] = useState('');
-  let count = localStorage.getItem(emailForm) || 0;
+  let count = localStorage.getItem('emailLimit') || 0;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,7 +35,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
       if (emailRegex.test(emailForm)) {
         if (Number(count) < 2) {
           // If less than 2, increase the count and save it
-          localStorage.setItem(emailForm, Number(count) + 1);
+          localStorage.setItem('emailLimit', Number(count) + 1);
           emailjs.send('service_br7pc65', 'template_d675cby', templateFormData, '0Vrk_eCV-opU4mZPo')
             .then((result) => {
               setStateMessage("تم إرسال البريد بنجاح")
@@ -44,7 +44,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
               setNameForm('');
               setEmailForm('');
               setMessageForm('');
-              // handleClose();
+              handleClose();
             }).catch((error) => {
               setStateMessage('حدث خطأ ما لم يتم إرسال البريد');
               setShowAlert(true);
@@ -144,7 +144,7 @@ const ProductCard = ({ imageUrl, name, description, price, onPurchase }) => {
           aria-live="polite"
           aria-atomic="true"
           className="position-relative"
-          style={{ minHeight: '95px' }}
+          style={{ minHeight: '100px' }}
         >
           <ToastContainer position="middle-center" className="position-absolute" style={{ zIndex: 9999 }}>
             <Toast className='bg-primary-subtle' onClose={() => setShowAlert(false)} delay={4000} autohide show={showAlert}>
