@@ -4,11 +4,16 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
+import emailjs from '@emailjs/browser';
 
-const ProductInquiryForm = ({ show, handleClose, showAlert, setShowAlert, setStateMessage, onInquirySubmit }) => {
+const ProductInquiryForm = ({ show, handleClose, showAlert, setShowAlert, onInquirySubmit }) => {
+  
+
   const [nameForm, setNameForm] = useState('');
   const [emailForm, setEmailForm] = useState('');
   const [messageForm, setMessageForm] = useState('');
+  const [stateMessage, setStateMessage] = useState('');
+  let count = localStorage.getItem('emailLimit') || 0;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,7 +30,30 @@ const ProductInquiryForm = ({ show, handleClose, showAlert, setShowAlert, setSta
     } else {
       let emailRegex = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$/;
       if (emailRegex.test(emailForm)) {
-        onInquirySubmit(templateFormData);
+        if (Number(count) < 2) {
+          // If less than 2, increase the count and save it
+          localStorage.setItem('emailLimit', Number(count) + 1);
+          emailjs.send('service_br7pc65', 'template_d675cby', templateFormData, '0Vrk_eCV-opU4mZPo')
+            .then((result) => {
+              setStateMessage("تم إرسال البريد بنجاح")
+              setShowAlert(true);
+              console.log(result.status);
+              setNameForm('');
+              setEmailForm('');
+              setMessageForm('');
+              handleClose();
+
+            }).catch((error) => {
+              setStateMessage('حدث خطأ ما لم يتم إرسال البريد');
+              setShowAlert(true);
+              console.log(error);
+            });
+        } else {
+          // If 2 or more, return false
+          setStateMessage('المعذرة لا تستطيع إرسال المزيد من الرسائل ، فقط انتظر إلى يتم الرد عليك');
+          setShowAlert(true);
+        }
+
       } else {
         setStateMessage('ادخل بريد إلكتروني صالح');
         setShowAlert(true);

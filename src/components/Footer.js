@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import logo from '../images/greenLogo.svg';
-import '../css/scss/_Footer.scss'; // Import the SCSS file
+import '../css/scss/_Footer.scss'; 
 
 import ProductInquiryForm from './ProductInquiryForm';
 import emailjs from '@emailjs/browser';
@@ -25,7 +25,7 @@ const Footer = () => {
 
   const [show, setShow] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
-  const [/*stateMessage,*/ setStateMessage] = useState('');
+  const [stateMessage, setStateMessage] = useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
