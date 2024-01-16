@@ -25,7 +25,7 @@ const Footer = () => {
 
   const [show, setShow] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
-  const [stateMessage, setStateMessage] = useState('');
+  const [setStateMessage] = useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
