@@ -43,6 +43,9 @@ const ProductInquiryForm = ({ show, handleClose, showAlert, setShowAlert, onInqu
               setMessageForm('');
               handleClose();
 
+              setTimeout(() => {
+              }, 3000);
+
             }).catch((error) => {
               setStateMessage('حدث خطأ ما لم يتم إرسال البريد');
               setShowAlert(true);
