@@ -11,7 +11,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.initialize('YOUR_TRACKING_ID'); // Replace with your Google Analytics tracking ID
+    ReactGA.initialize('G-TMM1SR2295'); 
   }, []);
 
   useEffect(() => {
